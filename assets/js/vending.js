@@ -15,6 +15,36 @@ function normalizeKeyword(value) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.site-header').forEach((header) => {
+    const button = header.querySelector('.nav-toggle');
+    const nav = header.querySelector('.nav');
+    const label = button ? button.querySelector('.sr-only') : null;
+    if (!button || !nav) return;
+    header.classList.add('has-nav-toggle');
+
+    const setOpen = (open) => {
+      header.classList.toggle('is-nav-open', open);
+      button.setAttribute('aria-expanded', String(open));
+      if (label) label.textContent = open ? '메뉴 닫기' : '메뉴 열기';
+    };
+
+    button.addEventListener('click', () => {
+      setOpen(!header.classList.contains('is-nav-open'));
+    });
+
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) setOpen(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setOpen(false);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) setOpen(false);
+    });
+  });
+
   document.querySelectorAll('[data-region-search-scope]').forEach((scope) => {
     const input = scope.querySelector('[data-region-search-input]');
     const items = Array.from(scope.querySelectorAll('[data-region-search-item]'));
