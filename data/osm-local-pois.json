@@ -1,0 +1,387 @@
+{
+  "source": {
+    "name": "OpenStreetMap Overpass API",
+    "url": "https://overpass-api.de/",
+    "fetchedAt": "2026-08-21T09:05:55.635Z",
+    "note": "지역 페이지 테스트용 좌표 기반 POI 보강 데이터"
+  },
+  "districts": {
+    "서울특별시 종로구": {
+      "stations": [
+        {
+          "name": "종로5가역",
+          "osmType": "node",
+          "osmId": 3426724598
+        },
+        {
+          "name": "안국역",
+          "osmType": "node",
+          "osmId": 5782503942
+        },
+        {
+          "name": "동대문역",
+          "osmType": "node",
+          "osmId": 5812233465
+        },
+        {
+          "name": "종각역",
+          "osmType": "node",
+          "osmId": 5863335699
+        },
+        {
+          "name": "동묘앞역",
+          "osmType": "node",
+          "osmId": 5916874394
+        },
+        {
+          "name": "경복궁역",
+          "osmType": "node",
+          "osmId": 6033544429
+        },
+        {
+          "name": "독립문역",
+          "osmType": "node",
+          "osmId": 6033544434
+        },
+        {
+          "name": "혜화역",
+          "osmType": "node",
+          "osmId": 6036160325
+        }
+      ],
+      "campuses": [
+        {
+          "name": "상명대학교 서울캠퍼스",
+          "osmType": "node",
+          "osmId": 368650195
+        },
+        {
+          "name": "서울장신대학교",
+          "osmType": "node",
+          "osmId": 368652190
+        }
+      ],
+      "hospitals": [
+        {
+          "name": "서울대병원 원남별관",
+          "osmType": "node",
+          "osmId": 368951106
+        },
+        {
+          "name": "로이병원",
+          "osmType": "node",
+          "osmId": 2279743961
+        },
+        {
+          "name": "해정병원",
+          "osmType": "node",
+          "osmId": 2471445560
+        },
+        {
+          "name": "구천당한의원2F",
+          "osmType": "node",
+          "osmId": 7557536206
+        },
+        {
+          "name": "세란병원",
+          "osmType": "node",
+          "osmId": 9169245217
+        }
+      ],
+      "nature": [
+        {
+          "name": "형제봉1",
+          "osmType": "node",
+          "osmId": 442881015
+        },
+        {
+          "name": "형제봉",
+          "osmType": "node",
+          "osmId": 442881216
+        },
+        {
+          "name": "북악산",
+          "osmType": "node",
+          "osmId": 2668271331
+        },
+        {
+          "name": "비봉",
+          "osmType": "node",
+          "osmId": 5515194633
+        },
+        {
+          "name": "승가봉",
+          "osmType": "node",
+          "osmId": 5515194635
+        },
+        {
+          "name": "보현봉",
+          "osmType": "node",
+          "osmId": 5515194637
+        },
+        {
+          "name": "향로봉",
+          "osmType": "node",
+          "osmId": 5515194677
+        },
+        {
+          "name": "인왕산",
+          "osmType": "node",
+          "osmId": 6505641385
+        }
+      ],
+      "parks": [],
+      "landmarks": [
+        {
+          "name": "국립서울과학관",
+          "osmType": "node",
+          "osmId": 368632876
+        },
+        {
+          "name": "한국교회100주년기념관",
+          "osmType": "node",
+          "osmId": 368635876
+        },
+        {
+          "name": "사비나 미술관",
+          "osmType": "node",
+          "osmId": 368725477
+        },
+        {
+          "name": "인사동한국미술관",
+          "osmType": "node",
+          "osmId": 368726227
+        },
+        {
+          "name": "가회민화박물관",
+          "osmType": "node",
+          "osmId": 368733960
+        },
+        {
+          "name": "신문박물관",
+          "osmType": "node",
+          "osmId": 368734210
+        },
+        {
+          "name": "성균관대학교박물관",
+          "osmType": "node",
+          "osmId": 368734745
+        },
+        {
+          "name": "화정박물관",
+          "osmType": "node",
+          "osmId": 368735170
+        }
+      ],
+      "commerce": [
+        {
+          "name": "종각지하쇼핑센터",
+          "osmType": "node",
+          "osmId": 5920996813
+        }
+      ]
+    },
+    "서울특별시 중구": {
+      "stations": [
+        {
+          "name": "동대문역사문화공원역",
+          "osmType": "node",
+          "osmId": 5772552255
+        },
+        {
+          "name": "을지로3가역",
+          "osmType": "node",
+          "osmId": 5930698985
+        },
+        {
+          "name": "충무로역",
+          "osmType": "node",
+          "osmId": 5933896995
+        },
+        {
+          "name": "약수역",
+          "osmType": "node",
+          "osmId": 5933896998
+        },
+        {
+          "name": "시청역",
+          "osmType": "node",
+          "osmId": 5935738063
+        },
+        {
+          "name": "을지로입구역",
+          "osmType": "node",
+          "osmId": 5935738064
+        },
+        {
+          "name": "을지로4가역",
+          "osmType": "node",
+          "osmId": 5935738067
+        },
+        {
+          "name": "신당역",
+          "osmType": "node",
+          "osmId": 5935738288
+        }
+      ],
+      "campuses": [
+        {
+          "name": "숭의여자대학교 별관",
+          "osmType": "node",
+          "osmId": 7231285813
+        }
+      ],
+      "hospitals": [
+        {
+          "name": "에스앤비안과",
+          "osmType": "node",
+          "osmId": 368739562
+        },
+        {
+          "name": "메디코스",
+          "osmType": "node",
+          "osmId": 368741930
+        },
+        {
+          "name": "라임나무 치과병원",
+          "osmType": "node",
+          "osmId": 3612031620
+        },
+        {
+          "name": "서울송도병원",
+          "osmType": "node",
+          "osmId": 4655504331
+        },
+        {
+          "name": "명동성모안과",
+          "osmType": "node",
+          "osmId": 11478109669
+        }
+      ],
+      "nature": [
+        {
+          "name": "남산",
+          "osmType": "node",
+          "osmId": 288169256
+        },
+        {
+          "name": "무학봉",
+          "osmType": "node",
+          "osmId": 8440420534
+        }
+      ],
+      "parks": [],
+      "landmarks": [
+        {
+          "name": "안중근의사기념관",
+          "osmType": "node",
+          "osmId": 368635808
+        },
+        {
+          "name": "현암기념관",
+          "osmType": "node",
+          "osmId": 368635872
+        },
+        {
+          "name": "초전섬유 퀼트박물관",
+          "osmType": "node",
+          "osmId": 368734273
+        },
+        {
+          "name": "궁중유물전시관",
+          "osmType": "node",
+          "osmId": 368898176
+        },
+        {
+          "name": "하이커 그라운드",
+          "osmType": "node",
+          "osmId": 368898266
+        },
+        {
+          "name": "농업박물관",
+          "osmType": "node",
+          "osmId": 921242698
+        },
+        {
+          "name": "동대문역사관1398",
+          "osmType": "node",
+          "osmId": 3547230644
+        },
+        {
+          "name": "동대문운동장기념관",
+          "osmType": "node",
+          "osmId": 3547231812
+        }
+      ],
+      "commerce": [
+        {
+          "name": "1898광장",
+          "osmType": "node",
+          "osmId": 6641803387
+        },
+        {
+          "name": "명동지하상가",
+          "osmType": "node",
+          "osmId": 6665972902
+        },
+        {
+          "name": "소공 지하쇼핑센터",
+          "osmType": "node",
+          "osmId": 6673823065
+        },
+        {
+          "name": "회현 지하상가 2번 출입구",
+          "osmType": "node",
+          "osmId": 7297927658
+        },
+        {
+          "name": "회현 지하상가1번 출입구",
+          "osmType": "node",
+          "osmId": 7297927659
+        },
+        {
+          "name": "회현 지하상가 12번 출입구",
+          "osmType": "node",
+          "osmId": 7297927665
+        },
+        {
+          "name": "회현 지하상가 11번 출입구",
+          "osmType": "node",
+          "osmId": 7297927670
+        },
+        {
+          "name": "새로나쇼핑",
+          "osmType": "node",
+          "osmId": 10316028026
+        }
+      ]
+    },
+    "서울특별시 용산구": {
+      "stations": [],
+      "campuses": [],
+      "hospitals": [],
+      "nature": [],
+      "parks": [],
+      "landmarks": [],
+      "commerce": []
+    },
+    "서울특별시 성동구": {
+      "stations": [],
+      "campuses": [],
+      "hospitals": [],
+      "nature": [],
+      "parks": [],
+      "landmarks": [],
+      "commerce": []
+    },
+    "서울특별시 광진구": {
+      "stations": [],
+      "campuses": [],
+      "hospitals": [],
+      "nature": [],
+      "parks": [],
+      "landmarks": [],
+      "commerce": []
+    }
+  }
+}

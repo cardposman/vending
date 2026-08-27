@@ -44,6 +44,14 @@ function pagePath(district, dong) {
   return `/${parts.join('/')}/`;
 }
 
+function regionHubPath() {
+  return '/region/';
+}
+
+function provincePath(provinceSlug) {
+  return `/region/${provinceSlug}/`;
+}
+
 function filePathFromUrl(urlPath) {
   const local = urlPath.replace(/^\/|\/$/g, '').split('/').filter(Boolean);
   return path.join(ROOT, ...local, 'index.html');
@@ -137,7 +145,16 @@ function header(district, activeDistrict) {
   return `<header class="site-header"><div class="wrap header-inner">
 <a class="logo" href="/">TS밴딩시스템</a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">메뉴 열기</span></button>
-<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="${pagePath(district)}"${districtCurrent}>${escapeHtml(district.districtName)}</a><a href="#contact">상담하기</a></nav>
+<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="/region/">지역별 상담</a><a href="${pagePath(district)}"${districtCurrent}>${escapeHtml(district.districtName)}</a><a href="#contact">상담하기</a></nav>
+</div></header>`;
+}
+
+function categoryHeader(activeRegion = false) {
+  const regionCurrent = activeRegion ? ' aria-current="page"' : '';
+  return `<header class="site-header"><div class="wrap header-inner">
+<a class="logo" href="/">TS밴딩시스템</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">메뉴 열기</span></button>
+<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="/region/"${regionCurrent}>지역별 상담</a><a href="#contact">상담하기</a></nav>
 </div></header>`;
 }
 
@@ -208,8 +225,9 @@ function footer() {
 }
 
 function districtSearch(district) {
-  const total = district.dongs.length;
-  const links = district.dongs.map((dong) => `<a class="link-card is-hidden" data-region-search-item data-region-search-text="${escapeHtml(`${district.provinceName} ${district.districtName} ${dong.name}`)}" href="${pagePath(district, dong)}">${escapeHtml(dong.name)}</a>`).join('');
+  const dongs = district.dongs || [];
+  const total = dongs.length;
+  const links = dongs.map((dong) => `<a class="link-card is-hidden" data-region-search-item data-region-search-text="${escapeHtml(`${district.provinceName} ${district.districtName} ${dong.name}`)}" href="${pagePath(district, dong)}">${escapeHtml(dong.name)}</a>`).join('');
   return `<section class="section" aria-labelledby="dong-search-title"><div class="wrap">
 <div class="search-box" data-region-search-scope>
 <span class="kicker">동단위 검색</span>
@@ -227,6 +245,99 @@ function contextSection(title, context, nearby) {
 <article class="panel"><span class="kicker">지역 소개</span><h2 id="context-title">${escapeHtml(title)}</h2><p>${escapeHtml(context)}</p><p>이 지역은 운영 품목, 고객 체류 시간, 관리 가능 시간에 따라 적합한 모델이 달라질 수 있습니다.</p></article>
 <article class="panel"><span class="kicker">인근 상권</span><h2>매장 위치와 생활권 확인</h2><p>${escapeHtml(nearby)}</p><ul class="check-list"><li>방문객 체류 시간과 피크 시간대 확인</li><li>냉장·냉동 상품과 일반 상품 분리 운영 검토</li><li>전원 위치, 문 열림 공간, 관리 동선 확인</li></ul></article>
 </div></div></section>`;
+}
+
+function groupByProvince(districts) {
+  const groups = new Map();
+  for (const district of districts) {
+    if (!groups.has(district.provinceSlug)) {
+      groups.set(district.provinceSlug, {
+        provinceName: district.provinceName,
+        provinceSlug: district.provinceSlug,
+        districts: []
+      });
+    }
+    groups.get(district.provinceSlug).districts.push(district);
+  }
+  return [...groups.values()];
+}
+
+function categoryLinkGrid(items) {
+  return `<div class="link-grid">${items.map((item) => `<a class="link-card" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join('')}</div>`;
+}
+
+function renderCategoryPage(site, page, content) {
+  return `<!DOCTYPE html>
+<html lang="ko">
+${head(site, page)}
+<body>
+${categoryHeader(true)}
+<main>
+${content}
+</main>
+${footer()}
+</body>
+</html>
+`;
+}
+
+function renderRegionHub(site, districts) {
+  const groups = groupByProvince(districts);
+  const urlPath = regionHubPath();
+  const page = {
+    title: '전국 무인자판기 지역별 상담 카테고리 | TS밴딩시스템',
+    description: '전국 시도별 무인자판기 렌탈 상담 지역 페이지를 확인할 수 있습니다. 시/구/군 단위 상담 페이지로 이동해 설치 지역을 점검해보세요.',
+    url: absoluteUrl(site, urlPath),
+    ogImage: absoluteUrl(site, '/assets/images/vending-hero-thumb-04.webp'),
+    faq: faqItems,
+    h1: '전국 무인자판기 지역별 상담',
+    lead: '테스트 확인용 지역 카테고리입니다. 시도별로 생성된 시/구/군 상담 페이지를 한 번에 확인할 수 있습니다.',
+    heroImage: 'vending-hero-thumb-04.webp',
+    heroAlt: '전국 무인자판기 지역별 상담 카테고리 이미지'
+  };
+  const links = groups.map((group) => ({
+    href: provincePath(group.provinceSlug),
+    label: `${group.provinceName} ${group.districts.length}개 지역`
+  }));
+  const content = [
+    hero(page),
+    `<section class="section" aria-labelledby="region-category-title"><div class="wrap">
+<div class="section-head"><span class="kicker">지역 카테고리</span><h2 id="region-category-title">시도별 상담 지역</h2><p>현재 생성된 전국 시/구/군 페이지를 시도 단위로 묶었습니다.</p></div>
+${categoryLinkGrid(links)}
+</div></section>`,
+    faqSection(page.faq),
+    finalCta('전국')
+  ].join('\n');
+  return renderCategoryPage(site, page, content);
+}
+
+function renderProvinceHub(site, group) {
+  const urlPath = provincePath(group.provinceSlug);
+  const page = {
+    title: `${group.provinceName} 무인자판기 지역별 상담 카테고리 | TS밴딩시스템`,
+    description: `${group.provinceName} 시/구/군별 무인자판기 렌탈 상담 페이지를 확인할 수 있습니다. 설치 지역과 인근 생활권을 기준으로 상담 페이지를 선택해보세요.`,
+    url: absoluteUrl(site, urlPath),
+    ogImage: absoluteUrl(site, '/assets/images/vending-hero-thumb-05.webp'),
+    faq: faqItems,
+    h1: `${group.provinceName} 무인자판기 지역별 상담`,
+    lead: `${group.provinceName} 안에서 생성된 시/구/군 상담 페이지를 모아둔 테스트용 카테고리입니다. 원하는 지역 페이지로 이동해 본문과 메타 정보를 확인할 수 있습니다.`,
+    heroImage: 'vending-hero-thumb-05.webp',
+    heroAlt: `${group.provinceName} 무인자판기 지역별 상담 카테고리 이미지`
+  };
+  const links = group.districts.map((district) => ({
+    href: pagePath(district),
+    label: district.districtName
+  }));
+  const content = [
+    hero(page),
+    `<section class="section" aria-labelledby="province-category-title"><div class="wrap">
+<div class="section-head"><span class="kicker">시/구/군 카테고리</span><h2 id="province-category-title">${escapeHtml(group.provinceName)} 상담 지역</h2><p>테스트를 위해 현재 생성된 ${escapeHtml(group.provinceName)} 지역 페이지를 모두 연결했습니다.</p></div>
+${categoryLinkGrid(links)}
+</div></section>`,
+    faqSection(page.faq),
+    finalCta(group.provinceName)
+  ].join('\n');
+  return renderCategoryPage(site, page, content);
 }
 
 function renderPage(site, district, dong) {
@@ -249,7 +360,7 @@ function renderPage(site, district, dong) {
 
   const content = [
     hero(page),
-    dong ? contextSection('상권 특성에 맞춘 설치 상담', dong.lead, dong.nearby) : districtSearch(district),
+    dong ? contextSection('상권 특성에 맞춘 설치 상담', dong.lead, dong.nearby) : ((district.dongs || []).length ? districtSearch(district) : ''),
     !dong ? contextSection('상권 특성에 맞춘 설치 상담', district.context, district.nearby) : '',
     marketingSection(),
     productSection(selectedProducts(seed)),
@@ -275,10 +386,16 @@ ${footer()}
 function main() {
   const data = readJson(DATA_FILE);
   const files = [];
+  const provinceGroups = groupByProvince(data.districts);
+
+  files.push([filePathFromUrl(regionHubPath()), renderRegionHub(data.site, data.districts)]);
+  for (const group of provinceGroups) {
+    files.push([filePathFromUrl(provincePath(group.provinceSlug)), renderProvinceHub(data.site, group)]);
+  }
 
   for (const district of data.districts) {
     files.push([filePathFromUrl(pagePath(district)), renderPage(data.site, district)]);
-    for (const dong of district.dongs) {
+    for (const dong of district.dongs || []) {
       files.push([filePathFromUrl(pagePath(district, dong)), renderPage(data.site, district, dong)]);
     }
   }
@@ -289,6 +406,12 @@ function main() {
       fs.writeFileSync(target, html, 'utf8');
     }
     console.log(`${WRITE ? 'wrote' : 'would write'} ${path.relative(ROOT, target)}`);
+  }
+
+  if (WRITE) {
+    const urls = files.map(([target]) => `/${path.relative(ROOT, target).replace(/\\/g, '/').replace(/\/index\.html$/, '/')}`);
+    fs.writeFileSync(path.join(ROOT, 'data', 'generated-urls.txt'), `${urls.join('\n')}\n`, 'utf8');
+    console.log(`wrote data${path.sep}generated-urls.txt (${urls.length})`);
   }
 
   if (!WRITE) console.log('\nDry run only. Re-run with --write to create or update region pages.');

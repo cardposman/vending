@@ -1,0 +1,2703 @@
+{
+  "source": {
+    "name": "행정표준코드관리시스템 법정동코드 전체자료",
+    "url": "https://www.code.go.kr/stdcode/regCodeL.do",
+    "downloadedFrom": "https://www.code.go.kr/etc/codeFullDown.do",
+    "sourceFile": "data/source/code-go-kr-regcode-full/법정동코드 전체자료.txt",
+    "extractedAt": "2026-08-21T08:16:18.067Z",
+    "rule": "현존 법정동코드 중 시도 2자리 + 시군구 3자리 + 00000 형식",
+    "count": 269
+  },
+  "districts": [
+    {
+      "code": "1111000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "종로구",
+      "officialName": "서울특별시 종로구",
+      "displayName": "종로구",
+      "pathCode": "11110"
+    },
+    {
+      "code": "1114000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "중구",
+      "officialName": "서울특별시 중구",
+      "displayName": "중구",
+      "pathCode": "11140"
+    },
+    {
+      "code": "1117000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "용산구",
+      "officialName": "서울특별시 용산구",
+      "displayName": "용산구",
+      "pathCode": "11170"
+    },
+    {
+      "code": "1120000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "성동구",
+      "officialName": "서울특별시 성동구",
+      "displayName": "성동구",
+      "pathCode": "11200"
+    },
+    {
+      "code": "1121500000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "광진구",
+      "officialName": "서울특별시 광진구",
+      "displayName": "광진구",
+      "pathCode": "11215"
+    },
+    {
+      "code": "1123000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "동대문구",
+      "officialName": "서울특별시 동대문구",
+      "displayName": "동대문구",
+      "pathCode": "11230"
+    },
+    {
+      "code": "1126000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "중랑구",
+      "officialName": "서울특별시 중랑구",
+      "displayName": "중랑구",
+      "pathCode": "11260"
+    },
+    {
+      "code": "1129000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "성북구",
+      "officialName": "서울특별시 성북구",
+      "displayName": "성북구",
+      "pathCode": "11290"
+    },
+    {
+      "code": "1130500000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "강북구",
+      "officialName": "서울특별시 강북구",
+      "displayName": "강북구",
+      "pathCode": "11305"
+    },
+    {
+      "code": "1132000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "도봉구",
+      "officialName": "서울특별시 도봉구",
+      "displayName": "도봉구",
+      "pathCode": "11320"
+    },
+    {
+      "code": "1135000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "노원구",
+      "officialName": "서울특별시 노원구",
+      "displayName": "노원구",
+      "pathCode": "11350"
+    },
+    {
+      "code": "1138000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "은평구",
+      "officialName": "서울특별시 은평구",
+      "displayName": "은평구",
+      "pathCode": "11380"
+    },
+    {
+      "code": "1141000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "서대문구",
+      "officialName": "서울특별시 서대문구",
+      "displayName": "서대문구",
+      "pathCode": "11410"
+    },
+    {
+      "code": "1144000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "마포구",
+      "officialName": "서울특별시 마포구",
+      "displayName": "마포구",
+      "pathCode": "11440"
+    },
+    {
+      "code": "1147000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "양천구",
+      "officialName": "서울특별시 양천구",
+      "displayName": "양천구",
+      "pathCode": "11470"
+    },
+    {
+      "code": "1150000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "강서구",
+      "officialName": "서울특별시 강서구",
+      "displayName": "강서구",
+      "pathCode": "11500"
+    },
+    {
+      "code": "1153000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "구로구",
+      "officialName": "서울특별시 구로구",
+      "displayName": "구로구",
+      "pathCode": "11530"
+    },
+    {
+      "code": "1154500000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "금천구",
+      "officialName": "서울특별시 금천구",
+      "displayName": "금천구",
+      "pathCode": "11545"
+    },
+    {
+      "code": "1156000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "영등포구",
+      "officialName": "서울특별시 영등포구",
+      "displayName": "영등포구",
+      "pathCode": "11560"
+    },
+    {
+      "code": "1159000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "동작구",
+      "officialName": "서울특별시 동작구",
+      "displayName": "동작구",
+      "pathCode": "11590"
+    },
+    {
+      "code": "1162000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "관악구",
+      "officialName": "서울특별시 관악구",
+      "displayName": "관악구",
+      "pathCode": "11620"
+    },
+    {
+      "code": "1165000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "서초구",
+      "officialName": "서울특별시 서초구",
+      "displayName": "서초구",
+      "pathCode": "11650"
+    },
+    {
+      "code": "1168000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "강남구",
+      "officialName": "서울특별시 강남구",
+      "displayName": "강남구",
+      "pathCode": "11680"
+    },
+    {
+      "code": "1171000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "송파구",
+      "officialName": "서울특별시 송파구",
+      "displayName": "송파구",
+      "pathCode": "11710"
+    },
+    {
+      "code": "1174000000",
+      "provinceCode": "1100000000",
+      "provinceName": "서울특별시",
+      "provinceShortName": "서울",
+      "districtName": "강동구",
+      "officialName": "서울특별시 강동구",
+      "displayName": "강동구",
+      "pathCode": "11740"
+    },
+    {
+      "code": "1211000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "목포시",
+      "officialName": "전남광주통합특별시 목포시",
+      "displayName": "목포시",
+      "pathCode": "12110"
+    },
+    {
+      "code": "1213000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "여수시",
+      "officialName": "전남광주통합특별시 여수시",
+      "displayName": "여수시",
+      "pathCode": "12130"
+    },
+    {
+      "code": "1215000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "순천시",
+      "officialName": "전남광주통합특별시 순천시",
+      "displayName": "순천시",
+      "pathCode": "12150"
+    },
+    {
+      "code": "1217000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "나주시",
+      "officialName": "전남광주통합특별시 나주시",
+      "displayName": "나주시",
+      "pathCode": "12170"
+    },
+    {
+      "code": "1219000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "광양시",
+      "officialName": "전남광주통합특별시 광양시",
+      "displayName": "광양시",
+      "pathCode": "12190"
+    },
+    {
+      "code": "1221000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "동구",
+      "officialName": "전남광주통합특별시 동구",
+      "displayName": "동구",
+      "pathCode": "12210"
+    },
+    {
+      "code": "1224000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "서구",
+      "officialName": "전남광주통합특별시 서구",
+      "displayName": "서구",
+      "pathCode": "12240"
+    },
+    {
+      "code": "1227000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "남구",
+      "officialName": "전남광주통합특별시 남구",
+      "displayName": "남구",
+      "pathCode": "12270"
+    },
+    {
+      "code": "1230000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "북구",
+      "officialName": "전남광주통합특별시 북구",
+      "displayName": "북구",
+      "pathCode": "12300"
+    },
+    {
+      "code": "1233000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "광산구",
+      "officialName": "전남광주통합특별시 광산구",
+      "displayName": "광산구",
+      "pathCode": "12330"
+    },
+    {
+      "code": "1271000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "담양군",
+      "officialName": "전남광주통합특별시 담양군",
+      "displayName": "담양군",
+      "pathCode": "12710"
+    },
+    {
+      "code": "1272000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "곡성군",
+      "officialName": "전남광주통합특별시 곡성군",
+      "displayName": "곡성군",
+      "pathCode": "12720"
+    },
+    {
+      "code": "1273000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "구례군",
+      "officialName": "전남광주통합특별시 구례군",
+      "displayName": "구례군",
+      "pathCode": "12730"
+    },
+    {
+      "code": "1274000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "고흥군",
+      "officialName": "전남광주통합특별시 고흥군",
+      "displayName": "고흥군",
+      "pathCode": "12740"
+    },
+    {
+      "code": "1275000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "보성군",
+      "officialName": "전남광주통합특별시 보성군",
+      "displayName": "보성군",
+      "pathCode": "12750"
+    },
+    {
+      "code": "1276000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "화순군",
+      "officialName": "전남광주통합특별시 화순군",
+      "displayName": "화순군",
+      "pathCode": "12760"
+    },
+    {
+      "code": "1277000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "장흥군",
+      "officialName": "전남광주통합특별시 장흥군",
+      "displayName": "장흥군",
+      "pathCode": "12770"
+    },
+    {
+      "code": "1278000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "강진군",
+      "officialName": "전남광주통합특별시 강진군",
+      "displayName": "강진군",
+      "pathCode": "12780"
+    },
+    {
+      "code": "1279000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "해남군",
+      "officialName": "전남광주통합특별시 해남군",
+      "displayName": "해남군",
+      "pathCode": "12790"
+    },
+    {
+      "code": "1280000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "영암군",
+      "officialName": "전남광주통합특별시 영암군",
+      "displayName": "영암군",
+      "pathCode": "12800"
+    },
+    {
+      "code": "1281000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "무안군",
+      "officialName": "전남광주통합특별시 무안군",
+      "displayName": "무안군",
+      "pathCode": "12810"
+    },
+    {
+      "code": "1282000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "함평군",
+      "officialName": "전남광주통합특별시 함평군",
+      "displayName": "함평군",
+      "pathCode": "12820"
+    },
+    {
+      "code": "1283000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "영광군",
+      "officialName": "전남광주통합특별시 영광군",
+      "displayName": "영광군",
+      "pathCode": "12830"
+    },
+    {
+      "code": "1284000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "장성군",
+      "officialName": "전남광주통합특별시 장성군",
+      "displayName": "장성군",
+      "pathCode": "12840"
+    },
+    {
+      "code": "1285000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "완도군",
+      "officialName": "전남광주통합특별시 완도군",
+      "displayName": "완도군",
+      "pathCode": "12850"
+    },
+    {
+      "code": "1286000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "진도군",
+      "officialName": "전남광주통합특별시 진도군",
+      "displayName": "진도군",
+      "pathCode": "12860"
+    },
+    {
+      "code": "1287000000",
+      "provinceCode": "1200000000",
+      "provinceName": "전남광주통합특별시",
+      "provinceShortName": "전남광주통합",
+      "districtName": "신안군",
+      "officialName": "전남광주통합특별시 신안군",
+      "displayName": "신안군",
+      "pathCode": "12870"
+    },
+    {
+      "code": "2611000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "중구",
+      "officialName": "부산광역시 중구",
+      "displayName": "중구",
+      "pathCode": "26110"
+    },
+    {
+      "code": "2614000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "서구",
+      "officialName": "부산광역시 서구",
+      "displayName": "서구",
+      "pathCode": "26140"
+    },
+    {
+      "code": "2617000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "동구",
+      "officialName": "부산광역시 동구",
+      "displayName": "동구",
+      "pathCode": "26170"
+    },
+    {
+      "code": "2620000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "영도구",
+      "officialName": "부산광역시 영도구",
+      "displayName": "영도구",
+      "pathCode": "26200"
+    },
+    {
+      "code": "2623000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "부산진구",
+      "officialName": "부산광역시 부산진구",
+      "displayName": "부산진구",
+      "pathCode": "26230"
+    },
+    {
+      "code": "2626000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "동래구",
+      "officialName": "부산광역시 동래구",
+      "displayName": "동래구",
+      "pathCode": "26260"
+    },
+    {
+      "code": "2629000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "남구",
+      "officialName": "부산광역시 남구",
+      "displayName": "남구",
+      "pathCode": "26290"
+    },
+    {
+      "code": "2632000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "북구",
+      "officialName": "부산광역시 북구",
+      "displayName": "북구",
+      "pathCode": "26320"
+    },
+    {
+      "code": "2635000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "해운대구",
+      "officialName": "부산광역시 해운대구",
+      "displayName": "해운대구",
+      "pathCode": "26350"
+    },
+    {
+      "code": "2638000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "사하구",
+      "officialName": "부산광역시 사하구",
+      "displayName": "사하구",
+      "pathCode": "26380"
+    },
+    {
+      "code": "2641000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "금정구",
+      "officialName": "부산광역시 금정구",
+      "displayName": "금정구",
+      "pathCode": "26410"
+    },
+    {
+      "code": "2644000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "강서구",
+      "officialName": "부산광역시 강서구",
+      "displayName": "강서구",
+      "pathCode": "26440"
+    },
+    {
+      "code": "2647000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "연제구",
+      "officialName": "부산광역시 연제구",
+      "displayName": "연제구",
+      "pathCode": "26470"
+    },
+    {
+      "code": "2650000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "수영구",
+      "officialName": "부산광역시 수영구",
+      "displayName": "수영구",
+      "pathCode": "26500"
+    },
+    {
+      "code": "2653000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "사상구",
+      "officialName": "부산광역시 사상구",
+      "displayName": "사상구",
+      "pathCode": "26530"
+    },
+    {
+      "code": "2671000000",
+      "provinceCode": "2600000000",
+      "provinceName": "부산광역시",
+      "provinceShortName": "부산",
+      "districtName": "기장군",
+      "officialName": "부산광역시 기장군",
+      "displayName": "기장군",
+      "pathCode": "26710"
+    },
+    {
+      "code": "2711000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "중구",
+      "officialName": "대구광역시 중구",
+      "displayName": "중구",
+      "pathCode": "27110"
+    },
+    {
+      "code": "2714000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "동구",
+      "officialName": "대구광역시 동구",
+      "displayName": "동구",
+      "pathCode": "27140"
+    },
+    {
+      "code": "2717000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "서구",
+      "officialName": "대구광역시 서구",
+      "displayName": "서구",
+      "pathCode": "27170"
+    },
+    {
+      "code": "2720000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "남구",
+      "officialName": "대구광역시 남구",
+      "displayName": "남구",
+      "pathCode": "27200"
+    },
+    {
+      "code": "2723000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "북구",
+      "officialName": "대구광역시 북구",
+      "displayName": "북구",
+      "pathCode": "27230"
+    },
+    {
+      "code": "2726000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "수성구",
+      "officialName": "대구광역시 수성구",
+      "displayName": "수성구",
+      "pathCode": "27260"
+    },
+    {
+      "code": "2729000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "달서구",
+      "officialName": "대구광역시 달서구",
+      "displayName": "달서구",
+      "pathCode": "27290"
+    },
+    {
+      "code": "2771000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "달성군",
+      "officialName": "대구광역시 달성군",
+      "displayName": "달성군",
+      "pathCode": "27710"
+    },
+    {
+      "code": "2772000000",
+      "provinceCode": "2700000000",
+      "provinceName": "대구광역시",
+      "provinceShortName": "대구",
+      "districtName": "군위군",
+      "officialName": "대구광역시 군위군",
+      "displayName": "군위군",
+      "pathCode": "27720"
+    },
+    {
+      "code": "2812500000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "제물포구",
+      "officialName": "인천광역시 제물포구",
+      "displayName": "제물포구",
+      "pathCode": "28125"
+    },
+    {
+      "code": "2815500000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "영종구",
+      "officialName": "인천광역시 영종구",
+      "displayName": "영종구",
+      "pathCode": "28155"
+    },
+    {
+      "code": "2817700000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "미추홀구",
+      "officialName": "인천광역시 미추홀구",
+      "displayName": "미추홀구",
+      "pathCode": "28177"
+    },
+    {
+      "code": "2818500000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "연수구",
+      "officialName": "인천광역시 연수구",
+      "displayName": "연수구",
+      "pathCode": "28185"
+    },
+    {
+      "code": "2820000000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "남동구",
+      "officialName": "인천광역시 남동구",
+      "displayName": "남동구",
+      "pathCode": "28200"
+    },
+    {
+      "code": "2823700000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "부평구",
+      "officialName": "인천광역시 부평구",
+      "displayName": "부평구",
+      "pathCode": "28237"
+    },
+    {
+      "code": "2824500000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "계양구",
+      "officialName": "인천광역시 계양구",
+      "displayName": "계양구",
+      "pathCode": "28245"
+    },
+    {
+      "code": "2827500000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "서해구",
+      "officialName": "인천광역시 서해구",
+      "displayName": "서해구",
+      "pathCode": "28275"
+    },
+    {
+      "code": "2829000000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "검단구",
+      "officialName": "인천광역시 검단구",
+      "displayName": "검단구",
+      "pathCode": "28290"
+    },
+    {
+      "code": "2871000000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "강화군",
+      "officialName": "인천광역시 강화군",
+      "displayName": "강화군",
+      "pathCode": "28710"
+    },
+    {
+      "code": "2872000000",
+      "provinceCode": "2800000000",
+      "provinceName": "인천광역시",
+      "provinceShortName": "인천",
+      "districtName": "옹진군",
+      "officialName": "인천광역시 옹진군",
+      "displayName": "옹진군",
+      "pathCode": "28720"
+    },
+    {
+      "code": "3011000000",
+      "provinceCode": "3000000000",
+      "provinceName": "대전광역시",
+      "provinceShortName": "대전",
+      "districtName": "동구",
+      "officialName": "대전광역시 동구",
+      "displayName": "동구",
+      "pathCode": "30110"
+    },
+    {
+      "code": "3014000000",
+      "provinceCode": "3000000000",
+      "provinceName": "대전광역시",
+      "provinceShortName": "대전",
+      "districtName": "중구",
+      "officialName": "대전광역시 중구",
+      "displayName": "중구",
+      "pathCode": "30140"
+    },
+    {
+      "code": "3017000000",
+      "provinceCode": "3000000000",
+      "provinceName": "대전광역시",
+      "provinceShortName": "대전",
+      "districtName": "서구",
+      "officialName": "대전광역시 서구",
+      "displayName": "서구",
+      "pathCode": "30170"
+    },
+    {
+      "code": "3020000000",
+      "provinceCode": "3000000000",
+      "provinceName": "대전광역시",
+      "provinceShortName": "대전",
+      "districtName": "유성구",
+      "officialName": "대전광역시 유성구",
+      "displayName": "유성구",
+      "pathCode": "30200"
+    },
+    {
+      "code": "3023000000",
+      "provinceCode": "3000000000",
+      "provinceName": "대전광역시",
+      "provinceShortName": "대전",
+      "districtName": "대덕구",
+      "officialName": "대전광역시 대덕구",
+      "displayName": "대덕구",
+      "pathCode": "30230"
+    },
+    {
+      "code": "3111000000",
+      "provinceCode": "3100000000",
+      "provinceName": "울산광역시",
+      "provinceShortName": "울산",
+      "districtName": "중구",
+      "officialName": "울산광역시 중구",
+      "displayName": "중구",
+      "pathCode": "31110"
+    },
+    {
+      "code": "3114000000",
+      "provinceCode": "3100000000",
+      "provinceName": "울산광역시",
+      "provinceShortName": "울산",
+      "districtName": "남구",
+      "officialName": "울산광역시 남구",
+      "displayName": "남구",
+      "pathCode": "31140"
+    },
+    {
+      "code": "3117000000",
+      "provinceCode": "3100000000",
+      "provinceName": "울산광역시",
+      "provinceShortName": "울산",
+      "districtName": "동구",
+      "officialName": "울산광역시 동구",
+      "displayName": "동구",
+      "pathCode": "31170"
+    },
+    {
+      "code": "3120000000",
+      "provinceCode": "3100000000",
+      "provinceName": "울산광역시",
+      "provinceShortName": "울산",
+      "districtName": "북구",
+      "officialName": "울산광역시 북구",
+      "displayName": "북구",
+      "pathCode": "31200"
+    },
+    {
+      "code": "3171000000",
+      "provinceCode": "3100000000",
+      "provinceName": "울산광역시",
+      "provinceShortName": "울산",
+      "districtName": "울주군",
+      "officialName": "울산광역시 울주군",
+      "displayName": "울주군",
+      "pathCode": "31710"
+    },
+    {
+      "code": "3611000000",
+      "provinceCode": "3600000000",
+      "provinceName": "세종특별자치시",
+      "provinceShortName": "세종",
+      "districtName": "세종특별자치시",
+      "officialName": "세종특별자치시",
+      "displayName": "세종특별자치시",
+      "pathCode": "36110"
+    },
+    {
+      "code": "4111000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "수원시",
+      "officialName": "경기도 수원시",
+      "displayName": "수원시",
+      "pathCode": "41110"
+    },
+    {
+      "code": "4111100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "수원시 장안구",
+      "officialName": "경기도 수원시 장안구",
+      "displayName": "수원시 장안구",
+      "pathCode": "41111"
+    },
+    {
+      "code": "4111300000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "수원시 권선구",
+      "officialName": "경기도 수원시 권선구",
+      "displayName": "수원시 권선구",
+      "pathCode": "41113"
+    },
+    {
+      "code": "4111500000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "수원시 팔달구",
+      "officialName": "경기도 수원시 팔달구",
+      "displayName": "수원시 팔달구",
+      "pathCode": "41115"
+    },
+    {
+      "code": "4111700000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "수원시 영통구",
+      "officialName": "경기도 수원시 영통구",
+      "displayName": "수원시 영통구",
+      "pathCode": "41117"
+    },
+    {
+      "code": "4113000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "성남시",
+      "officialName": "경기도 성남시",
+      "displayName": "성남시",
+      "pathCode": "41130"
+    },
+    {
+      "code": "4113100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "성남시 수정구",
+      "officialName": "경기도 성남시 수정구",
+      "displayName": "성남시 수정구",
+      "pathCode": "41131"
+    },
+    {
+      "code": "4113300000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "성남시 중원구",
+      "officialName": "경기도 성남시 중원구",
+      "displayName": "성남시 중원구",
+      "pathCode": "41133"
+    },
+    {
+      "code": "4113500000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "성남시 분당구",
+      "officialName": "경기도 성남시 분당구",
+      "displayName": "성남시 분당구",
+      "pathCode": "41135"
+    },
+    {
+      "code": "4115000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "의정부시",
+      "officialName": "경기도 의정부시",
+      "displayName": "의정부시",
+      "pathCode": "41150"
+    },
+    {
+      "code": "4117000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안양시",
+      "officialName": "경기도 안양시",
+      "displayName": "안양시",
+      "pathCode": "41170"
+    },
+    {
+      "code": "4117100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안양시 만안구",
+      "officialName": "경기도 안양시 만안구",
+      "displayName": "안양시 만안구",
+      "pathCode": "41171"
+    },
+    {
+      "code": "4117300000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안양시 동안구",
+      "officialName": "경기도 안양시 동안구",
+      "displayName": "안양시 동안구",
+      "pathCode": "41173"
+    },
+    {
+      "code": "4119000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "부천시",
+      "officialName": "경기도 부천시",
+      "displayName": "부천시",
+      "pathCode": "41190"
+    },
+    {
+      "code": "4119200000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "부천시 원미구 ",
+      "officialName": "경기도 부천시 원미구 ",
+      "displayName": "부천시 원미구 ",
+      "pathCode": "41192"
+    },
+    {
+      "code": "4119400000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "부천시 소사구 ",
+      "officialName": "경기도 부천시 소사구 ",
+      "displayName": "부천시 소사구 ",
+      "pathCode": "41194"
+    },
+    {
+      "code": "4119600000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "부천시 오정구 ",
+      "officialName": "경기도 부천시 오정구 ",
+      "displayName": "부천시 오정구 ",
+      "pathCode": "41196"
+    },
+    {
+      "code": "4121000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "광명시",
+      "officialName": "경기도 광명시",
+      "displayName": "광명시",
+      "pathCode": "41210"
+    },
+    {
+      "code": "4122000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "평택시",
+      "officialName": "경기도 평택시",
+      "displayName": "평택시",
+      "pathCode": "41220"
+    },
+    {
+      "code": "4125000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "동두천시",
+      "officialName": "경기도 동두천시",
+      "displayName": "동두천시",
+      "pathCode": "41250"
+    },
+    {
+      "code": "4127000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안산시",
+      "officialName": "경기도 안산시",
+      "displayName": "안산시",
+      "pathCode": "41270"
+    },
+    {
+      "code": "4127100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안산시 상록구",
+      "officialName": "경기도 안산시 상록구",
+      "displayName": "안산시 상록구",
+      "pathCode": "41271"
+    },
+    {
+      "code": "4127300000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안산시 단원구",
+      "officialName": "경기도 안산시 단원구",
+      "displayName": "안산시 단원구",
+      "pathCode": "41273"
+    },
+    {
+      "code": "4128000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "고양시",
+      "officialName": "경기도 고양시",
+      "displayName": "고양시",
+      "pathCode": "41280"
+    },
+    {
+      "code": "4128100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "고양시 덕양구",
+      "officialName": "경기도 고양시 덕양구",
+      "displayName": "고양시 덕양구",
+      "pathCode": "41281"
+    },
+    {
+      "code": "4128500000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "고양시 일산동구",
+      "officialName": "경기도 고양시 일산동구",
+      "displayName": "고양시 일산동구",
+      "pathCode": "41285"
+    },
+    {
+      "code": "4128700000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "고양시 일산서구",
+      "officialName": "경기도 고양시 일산서구",
+      "displayName": "고양시 일산서구",
+      "pathCode": "41287"
+    },
+    {
+      "code": "4129000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "과천시",
+      "officialName": "경기도 과천시",
+      "displayName": "과천시",
+      "pathCode": "41290"
+    },
+    {
+      "code": "4131000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "구리시",
+      "officialName": "경기도 구리시",
+      "displayName": "구리시",
+      "pathCode": "41310"
+    },
+    {
+      "code": "4136000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "남양주시",
+      "officialName": "경기도 남양주시",
+      "displayName": "남양주시",
+      "pathCode": "41360"
+    },
+    {
+      "code": "4137000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "오산시",
+      "officialName": "경기도 오산시",
+      "displayName": "오산시",
+      "pathCode": "41370"
+    },
+    {
+      "code": "4139000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "시흥시",
+      "officialName": "경기도 시흥시",
+      "displayName": "시흥시",
+      "pathCode": "41390"
+    },
+    {
+      "code": "4141000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "군포시",
+      "officialName": "경기도 군포시",
+      "displayName": "군포시",
+      "pathCode": "41410"
+    },
+    {
+      "code": "4143000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "의왕시",
+      "officialName": "경기도 의왕시",
+      "displayName": "의왕시",
+      "pathCode": "41430"
+    },
+    {
+      "code": "4145000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "하남시",
+      "officialName": "경기도 하남시",
+      "displayName": "하남시",
+      "pathCode": "41450"
+    },
+    {
+      "code": "4146000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "용인시",
+      "officialName": "경기도 용인시",
+      "displayName": "용인시",
+      "pathCode": "41460"
+    },
+    {
+      "code": "4146100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "용인시 처인구",
+      "officialName": "경기도 용인시 처인구",
+      "displayName": "용인시 처인구",
+      "pathCode": "41461"
+    },
+    {
+      "code": "4146300000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "용인시 기흥구",
+      "officialName": "경기도 용인시 기흥구",
+      "displayName": "용인시 기흥구",
+      "pathCode": "41463"
+    },
+    {
+      "code": "4146500000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "용인시 수지구",
+      "officialName": "경기도 용인시 수지구",
+      "displayName": "용인시 수지구",
+      "pathCode": "41465"
+    },
+    {
+      "code": "4148000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "파주시",
+      "officialName": "경기도 파주시",
+      "displayName": "파주시",
+      "pathCode": "41480"
+    },
+    {
+      "code": "4150000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "이천시",
+      "officialName": "경기도 이천시",
+      "displayName": "이천시",
+      "pathCode": "41500"
+    },
+    {
+      "code": "4155000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "안성시",
+      "officialName": "경기도 안성시",
+      "displayName": "안성시",
+      "pathCode": "41550"
+    },
+    {
+      "code": "4157000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "김포시",
+      "officialName": "경기도 김포시",
+      "displayName": "김포시",
+      "pathCode": "41570"
+    },
+    {
+      "code": "4159000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "화성시",
+      "officialName": "경기도 화성시",
+      "displayName": "화성시",
+      "pathCode": "41590"
+    },
+    {
+      "code": "4159100000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "화성시 만세구",
+      "officialName": "경기도 화성시 만세구",
+      "displayName": "화성시 만세구",
+      "pathCode": "41591"
+    },
+    {
+      "code": "4159300000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "화성시 효행구",
+      "officialName": "경기도 화성시 효행구",
+      "displayName": "화성시 효행구",
+      "pathCode": "41593"
+    },
+    {
+      "code": "4159500000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "화성시 병점구",
+      "officialName": "경기도 화성시 병점구",
+      "displayName": "화성시 병점구",
+      "pathCode": "41595"
+    },
+    {
+      "code": "4159700000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "화성시 동탄구",
+      "officialName": "경기도 화성시 동탄구",
+      "displayName": "화성시 동탄구",
+      "pathCode": "41597"
+    },
+    {
+      "code": "4161000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "광주시",
+      "officialName": "경기도 광주시",
+      "displayName": "광주시",
+      "pathCode": "41610"
+    },
+    {
+      "code": "4163000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "양주시",
+      "officialName": "경기도 양주시",
+      "displayName": "양주시",
+      "pathCode": "41630"
+    },
+    {
+      "code": "4165000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "포천시",
+      "officialName": "경기도 포천시",
+      "displayName": "포천시",
+      "pathCode": "41650"
+    },
+    {
+      "code": "4167000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "여주시",
+      "officialName": "경기도 여주시",
+      "displayName": "여주시",
+      "pathCode": "41670"
+    },
+    {
+      "code": "4180000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "연천군",
+      "officialName": "경기도 연천군",
+      "displayName": "연천군",
+      "pathCode": "41800"
+    },
+    {
+      "code": "4182000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "가평군",
+      "officialName": "경기도 가평군",
+      "displayName": "가평군",
+      "pathCode": "41820"
+    },
+    {
+      "code": "4183000000",
+      "provinceCode": "4100000000",
+      "provinceName": "경기도",
+      "provinceShortName": "경기",
+      "districtName": "양평군",
+      "officialName": "경기도 양평군",
+      "displayName": "양평군",
+      "pathCode": "41830"
+    },
+    {
+      "code": "4311000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "청주시",
+      "officialName": "충청북도 청주시",
+      "displayName": "청주시",
+      "pathCode": "43110"
+    },
+    {
+      "code": "4311100000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "청주시 상당구",
+      "officialName": "충청북도 청주시 상당구",
+      "displayName": "청주시 상당구",
+      "pathCode": "43111"
+    },
+    {
+      "code": "4311200000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "청주시 서원구",
+      "officialName": "충청북도 청주시 서원구",
+      "displayName": "청주시 서원구",
+      "pathCode": "43112"
+    },
+    {
+      "code": "4311300000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "청주시 흥덕구",
+      "officialName": "충청북도 청주시 흥덕구",
+      "displayName": "청주시 흥덕구",
+      "pathCode": "43113"
+    },
+    {
+      "code": "4311400000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "청주시 청원구",
+      "officialName": "충청북도 청주시 청원구",
+      "displayName": "청주시 청원구",
+      "pathCode": "43114"
+    },
+    {
+      "code": "4313000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "충주시",
+      "officialName": "충청북도 충주시",
+      "displayName": "충주시",
+      "pathCode": "43130"
+    },
+    {
+      "code": "4315000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "제천시",
+      "officialName": "충청북도 제천시",
+      "displayName": "제천시",
+      "pathCode": "43150"
+    },
+    {
+      "code": "4372000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "보은군",
+      "officialName": "충청북도 보은군",
+      "displayName": "보은군",
+      "pathCode": "43720"
+    },
+    {
+      "code": "4373000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "옥천군",
+      "officialName": "충청북도 옥천군",
+      "displayName": "옥천군",
+      "pathCode": "43730"
+    },
+    {
+      "code": "4374000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "영동군",
+      "officialName": "충청북도 영동군",
+      "displayName": "영동군",
+      "pathCode": "43740"
+    },
+    {
+      "code": "4374500000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "증평군",
+      "officialName": "충청북도 증평군",
+      "displayName": "증평군",
+      "pathCode": "43745"
+    },
+    {
+      "code": "4375000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "진천군",
+      "officialName": "충청북도 진천군",
+      "displayName": "진천군",
+      "pathCode": "43750"
+    },
+    {
+      "code": "4376000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "괴산군",
+      "officialName": "충청북도 괴산군",
+      "displayName": "괴산군",
+      "pathCode": "43760"
+    },
+    {
+      "code": "4377000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "음성군",
+      "officialName": "충청북도 음성군",
+      "displayName": "음성군",
+      "pathCode": "43770"
+    },
+    {
+      "code": "4380000000",
+      "provinceCode": "4300000000",
+      "provinceName": "충청북도",
+      "provinceShortName": "충청북",
+      "districtName": "단양군",
+      "officialName": "충청북도 단양군",
+      "displayName": "단양군",
+      "pathCode": "43800"
+    },
+    {
+      "code": "4413000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "천안시",
+      "officialName": "충청남도 천안시",
+      "displayName": "천안시",
+      "pathCode": "44130"
+    },
+    {
+      "code": "4413100000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "천안시 동남구",
+      "officialName": "충청남도 천안시 동남구",
+      "displayName": "천안시 동남구",
+      "pathCode": "44131"
+    },
+    {
+      "code": "4413300000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "천안시 서북구",
+      "officialName": "충청남도 천안시 서북구",
+      "displayName": "천안시 서북구",
+      "pathCode": "44133"
+    },
+    {
+      "code": "4415000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "공주시",
+      "officialName": "충청남도 공주시",
+      "displayName": "공주시",
+      "pathCode": "44150"
+    },
+    {
+      "code": "4418000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "보령시",
+      "officialName": "충청남도 보령시",
+      "displayName": "보령시",
+      "pathCode": "44180"
+    },
+    {
+      "code": "4420000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "아산시",
+      "officialName": "충청남도 아산시",
+      "displayName": "아산시",
+      "pathCode": "44200"
+    },
+    {
+      "code": "4421000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "서산시",
+      "officialName": "충청남도 서산시",
+      "displayName": "서산시",
+      "pathCode": "44210"
+    },
+    {
+      "code": "4423000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "논산시",
+      "officialName": "충청남도 논산시",
+      "displayName": "논산시",
+      "pathCode": "44230"
+    },
+    {
+      "code": "4425000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "계룡시",
+      "officialName": "충청남도 계룡시",
+      "displayName": "계룡시",
+      "pathCode": "44250"
+    },
+    {
+      "code": "4427000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "당진시",
+      "officialName": "충청남도 당진시",
+      "displayName": "당진시",
+      "pathCode": "44270"
+    },
+    {
+      "code": "4471000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "금산군",
+      "officialName": "충청남도 금산군",
+      "displayName": "금산군",
+      "pathCode": "44710"
+    },
+    {
+      "code": "4476000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "부여군",
+      "officialName": "충청남도 부여군",
+      "displayName": "부여군",
+      "pathCode": "44760"
+    },
+    {
+      "code": "4477000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "서천군",
+      "officialName": "충청남도 서천군",
+      "displayName": "서천군",
+      "pathCode": "44770"
+    },
+    {
+      "code": "4479000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "청양군",
+      "officialName": "충청남도 청양군",
+      "displayName": "청양군",
+      "pathCode": "44790"
+    },
+    {
+      "code": "4480000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "홍성군",
+      "officialName": "충청남도 홍성군",
+      "displayName": "홍성군",
+      "pathCode": "44800"
+    },
+    {
+      "code": "4481000000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "예산군",
+      "officialName": "충청남도 예산군",
+      "displayName": "예산군",
+      "pathCode": "44810"
+    },
+    {
+      "code": "4482500000",
+      "provinceCode": "4400000000",
+      "provinceName": "충청남도",
+      "provinceShortName": "충청남",
+      "districtName": "태안군",
+      "officialName": "충청남도 태안군",
+      "displayName": "태안군",
+      "pathCode": "44825"
+    },
+    {
+      "code": "4711000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "포항시",
+      "officialName": "경상북도 포항시",
+      "displayName": "포항시",
+      "pathCode": "47110"
+    },
+    {
+      "code": "4711100000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "포항시 남구",
+      "officialName": "경상북도 포항시 남구",
+      "displayName": "포항시 남구",
+      "pathCode": "47111"
+    },
+    {
+      "code": "4711300000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "포항시 북구",
+      "officialName": "경상북도 포항시 북구",
+      "displayName": "포항시 북구",
+      "pathCode": "47113"
+    },
+    {
+      "code": "4713000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "경주시",
+      "officialName": "경상북도 경주시",
+      "displayName": "경주시",
+      "pathCode": "47130"
+    },
+    {
+      "code": "4715000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "김천시",
+      "officialName": "경상북도 김천시",
+      "displayName": "김천시",
+      "pathCode": "47150"
+    },
+    {
+      "code": "4717000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "안동시",
+      "officialName": "경상북도 안동시",
+      "displayName": "안동시",
+      "pathCode": "47170"
+    },
+    {
+      "code": "4719000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "구미시",
+      "officialName": "경상북도 구미시",
+      "displayName": "구미시",
+      "pathCode": "47190"
+    },
+    {
+      "code": "4721000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "영주시",
+      "officialName": "경상북도 영주시",
+      "displayName": "영주시",
+      "pathCode": "47210"
+    },
+    {
+      "code": "4723000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "영천시",
+      "officialName": "경상북도 영천시",
+      "displayName": "영천시",
+      "pathCode": "47230"
+    },
+    {
+      "code": "4725000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "상주시",
+      "officialName": "경상북도 상주시",
+      "displayName": "상주시",
+      "pathCode": "47250"
+    },
+    {
+      "code": "4728000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "문경시",
+      "officialName": "경상북도 문경시",
+      "displayName": "문경시",
+      "pathCode": "47280"
+    },
+    {
+      "code": "4729000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "경산시",
+      "officialName": "경상북도 경산시",
+      "displayName": "경산시",
+      "pathCode": "47290"
+    },
+    {
+      "code": "4773000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "의성군",
+      "officialName": "경상북도 의성군",
+      "displayName": "의성군",
+      "pathCode": "47730"
+    },
+    {
+      "code": "4775000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "청송군",
+      "officialName": "경상북도 청송군",
+      "displayName": "청송군",
+      "pathCode": "47750"
+    },
+    {
+      "code": "4776000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "영양군",
+      "officialName": "경상북도 영양군",
+      "displayName": "영양군",
+      "pathCode": "47760"
+    },
+    {
+      "code": "4777000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "영덕군",
+      "officialName": "경상북도 영덕군",
+      "displayName": "영덕군",
+      "pathCode": "47770"
+    },
+    {
+      "code": "4782000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "청도군",
+      "officialName": "경상북도 청도군",
+      "displayName": "청도군",
+      "pathCode": "47820"
+    },
+    {
+      "code": "4783000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "고령군",
+      "officialName": "경상북도 고령군",
+      "displayName": "고령군",
+      "pathCode": "47830"
+    },
+    {
+      "code": "4784000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "성주군",
+      "officialName": "경상북도 성주군",
+      "displayName": "성주군",
+      "pathCode": "47840"
+    },
+    {
+      "code": "4785000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "칠곡군",
+      "officialName": "경상북도 칠곡군",
+      "displayName": "칠곡군",
+      "pathCode": "47850"
+    },
+    {
+      "code": "4790000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "예천군",
+      "officialName": "경상북도 예천군",
+      "displayName": "예천군",
+      "pathCode": "47900"
+    },
+    {
+      "code": "4792000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "봉화군",
+      "officialName": "경상북도 봉화군",
+      "displayName": "봉화군",
+      "pathCode": "47920"
+    },
+    {
+      "code": "4793000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "울진군",
+      "officialName": "경상북도 울진군",
+      "displayName": "울진군",
+      "pathCode": "47930"
+    },
+    {
+      "code": "4794000000",
+      "provinceCode": "4700000000",
+      "provinceName": "경상북도",
+      "provinceShortName": "경상북",
+      "districtName": "울릉군",
+      "officialName": "경상북도 울릉군",
+      "displayName": "울릉군",
+      "pathCode": "47940"
+    },
+    {
+      "code": "4812000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창원시",
+      "officialName": "경상남도 창원시",
+      "displayName": "창원시",
+      "pathCode": "48120"
+    },
+    {
+      "code": "4812100000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창원시 의창구",
+      "officialName": "경상남도 창원시 의창구",
+      "displayName": "창원시 의창구",
+      "pathCode": "48121"
+    },
+    {
+      "code": "4812300000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창원시 성산구",
+      "officialName": "경상남도 창원시 성산구",
+      "displayName": "창원시 성산구",
+      "pathCode": "48123"
+    },
+    {
+      "code": "4812500000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창원시 마산합포구",
+      "officialName": "경상남도 창원시 마산합포구",
+      "displayName": "창원시 마산합포구",
+      "pathCode": "48125"
+    },
+    {
+      "code": "4812700000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창원시 마산회원구",
+      "officialName": "경상남도 창원시 마산회원구",
+      "displayName": "창원시 마산회원구",
+      "pathCode": "48127"
+    },
+    {
+      "code": "4812900000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창원시 진해구",
+      "officialName": "경상남도 창원시 진해구",
+      "displayName": "창원시 진해구",
+      "pathCode": "48129"
+    },
+    {
+      "code": "4817000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "진주시",
+      "officialName": "경상남도 진주시",
+      "displayName": "진주시",
+      "pathCode": "48170"
+    },
+    {
+      "code": "4822000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "통영시",
+      "officialName": "경상남도 통영시",
+      "displayName": "통영시",
+      "pathCode": "48220"
+    },
+    {
+      "code": "4824000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "사천시",
+      "officialName": "경상남도 사천시",
+      "displayName": "사천시",
+      "pathCode": "48240"
+    },
+    {
+      "code": "4825000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "김해시",
+      "officialName": "경상남도 김해시",
+      "displayName": "김해시",
+      "pathCode": "48250"
+    },
+    {
+      "code": "4827000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "밀양시",
+      "officialName": "경상남도 밀양시",
+      "displayName": "밀양시",
+      "pathCode": "48270"
+    },
+    {
+      "code": "4831000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "거제시",
+      "officialName": "경상남도 거제시",
+      "displayName": "거제시",
+      "pathCode": "48310"
+    },
+    {
+      "code": "4833000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "양산시",
+      "officialName": "경상남도 양산시",
+      "displayName": "양산시",
+      "pathCode": "48330"
+    },
+    {
+      "code": "4872000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "의령군",
+      "officialName": "경상남도 의령군",
+      "displayName": "의령군",
+      "pathCode": "48720"
+    },
+    {
+      "code": "4873000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "함안군",
+      "officialName": "경상남도 함안군",
+      "displayName": "함안군",
+      "pathCode": "48730"
+    },
+    {
+      "code": "4874000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "창녕군",
+      "officialName": "경상남도 창녕군",
+      "displayName": "창녕군",
+      "pathCode": "48740"
+    },
+    {
+      "code": "4882000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "고성군",
+      "officialName": "경상남도 고성군",
+      "displayName": "고성군",
+      "pathCode": "48820"
+    },
+    {
+      "code": "4884000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "남해군",
+      "officialName": "경상남도 남해군",
+      "displayName": "남해군",
+      "pathCode": "48840"
+    },
+    {
+      "code": "4885000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "하동군",
+      "officialName": "경상남도 하동군",
+      "displayName": "하동군",
+      "pathCode": "48850"
+    },
+    {
+      "code": "4886000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "산청군",
+      "officialName": "경상남도 산청군",
+      "displayName": "산청군",
+      "pathCode": "48860"
+    },
+    {
+      "code": "4887000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "함양군",
+      "officialName": "경상남도 함양군",
+      "displayName": "함양군",
+      "pathCode": "48870"
+    },
+    {
+      "code": "4888000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "거창군",
+      "officialName": "경상남도 거창군",
+      "displayName": "거창군",
+      "pathCode": "48880"
+    },
+    {
+      "code": "4889000000",
+      "provinceCode": "4800000000",
+      "provinceName": "경상남도",
+      "provinceShortName": "경상남",
+      "districtName": "합천군",
+      "officialName": "경상남도 합천군",
+      "displayName": "합천군",
+      "pathCode": "48890"
+    },
+    {
+      "code": "5011000000",
+      "provinceCode": "5000000000",
+      "provinceName": "제주특별자치도",
+      "provinceShortName": "제주",
+      "districtName": "제주시",
+      "officialName": "제주특별자치도 제주시",
+      "displayName": "제주시",
+      "pathCode": "50110"
+    },
+    {
+      "code": "5013000000",
+      "provinceCode": "5000000000",
+      "provinceName": "제주특별자치도",
+      "provinceShortName": "제주",
+      "districtName": "서귀포시",
+      "officialName": "제주특별자치도 서귀포시",
+      "displayName": "서귀포시",
+      "pathCode": "50130"
+    },
+    {
+      "code": "5111000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "춘천시",
+      "officialName": "강원특별자치도 춘천시",
+      "displayName": "춘천시",
+      "pathCode": "51110"
+    },
+    {
+      "code": "5113000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "원주시",
+      "officialName": "강원특별자치도 원주시",
+      "displayName": "원주시",
+      "pathCode": "51130"
+    },
+    {
+      "code": "5115000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "강릉시",
+      "officialName": "강원특별자치도 강릉시",
+      "displayName": "강릉시",
+      "pathCode": "51150"
+    },
+    {
+      "code": "5117000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "동해시",
+      "officialName": "강원특별자치도 동해시",
+      "displayName": "동해시",
+      "pathCode": "51170"
+    },
+    {
+      "code": "5119000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "태백시",
+      "officialName": "강원특별자치도 태백시",
+      "displayName": "태백시",
+      "pathCode": "51190"
+    },
+    {
+      "code": "5121000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "속초시",
+      "officialName": "강원특별자치도 속초시",
+      "displayName": "속초시",
+      "pathCode": "51210"
+    },
+    {
+      "code": "5123000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "삼척시",
+      "officialName": "강원특별자치도 삼척시",
+      "displayName": "삼척시",
+      "pathCode": "51230"
+    },
+    {
+      "code": "5172000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "홍천군",
+      "officialName": "강원특별자치도 홍천군",
+      "displayName": "홍천군",
+      "pathCode": "51720"
+    },
+    {
+      "code": "5173000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "횡성군",
+      "officialName": "강원특별자치도 횡성군",
+      "displayName": "횡성군",
+      "pathCode": "51730"
+    },
+    {
+      "code": "5175000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "영월군",
+      "officialName": "강원특별자치도 영월군",
+      "displayName": "영월군",
+      "pathCode": "51750"
+    },
+    {
+      "code": "5176000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "평창군",
+      "officialName": "강원특별자치도 평창군",
+      "displayName": "평창군",
+      "pathCode": "51760"
+    },
+    {
+      "code": "5177000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "정선군",
+      "officialName": "강원특별자치도 정선군",
+      "displayName": "정선군",
+      "pathCode": "51770"
+    },
+    {
+      "code": "5178000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "철원군",
+      "officialName": "강원특별자치도 철원군",
+      "displayName": "철원군",
+      "pathCode": "51780"
+    },
+    {
+      "code": "5179000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "화천군",
+      "officialName": "강원특별자치도 화천군",
+      "displayName": "화천군",
+      "pathCode": "51790"
+    },
+    {
+      "code": "5180000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "양구군",
+      "officialName": "강원특별자치도 양구군",
+      "displayName": "양구군",
+      "pathCode": "51800"
+    },
+    {
+      "code": "5181000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "인제군",
+      "officialName": "강원특별자치도 인제군",
+      "displayName": "인제군",
+      "pathCode": "51810"
+    },
+    {
+      "code": "5182000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "고성군",
+      "officialName": "강원특별자치도 고성군",
+      "displayName": "고성군",
+      "pathCode": "51820"
+    },
+    {
+      "code": "5183000000",
+      "provinceCode": "5100000000",
+      "provinceName": "강원특별자치도",
+      "provinceShortName": "강원",
+      "districtName": "양양군",
+      "officialName": "강원특별자치도 양양군",
+      "displayName": "양양군",
+      "pathCode": "51830"
+    },
+    {
+      "code": "5211000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "전주시",
+      "officialName": "전북특별자치도 전주시",
+      "displayName": "전주시",
+      "pathCode": "52110"
+    },
+    {
+      "code": "5211100000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "전주시 완산구",
+      "officialName": "전북특별자치도 전주시 완산구",
+      "displayName": "전주시 완산구",
+      "pathCode": "52111"
+    },
+    {
+      "code": "5211300000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "전주시 덕진구",
+      "officialName": "전북특별자치도 전주시 덕진구",
+      "displayName": "전주시 덕진구",
+      "pathCode": "52113"
+    },
+    {
+      "code": "5213000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "군산시",
+      "officialName": "전북특별자치도 군산시",
+      "displayName": "군산시",
+      "pathCode": "52130"
+    },
+    {
+      "code": "5214000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "익산시",
+      "officialName": "전북특별자치도 익산시",
+      "displayName": "익산시",
+      "pathCode": "52140"
+    },
+    {
+      "code": "5218000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "정읍시",
+      "officialName": "전북특별자치도 정읍시",
+      "displayName": "정읍시",
+      "pathCode": "52180"
+    },
+    {
+      "code": "5219000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "남원시",
+      "officialName": "전북특별자치도 남원시",
+      "displayName": "남원시",
+      "pathCode": "52190"
+    },
+    {
+      "code": "5221000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "김제시",
+      "officialName": "전북특별자치도 김제시",
+      "displayName": "김제시",
+      "pathCode": "52210"
+    },
+    {
+      "code": "5271000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "완주군",
+      "officialName": "전북특별자치도 완주군",
+      "displayName": "완주군",
+      "pathCode": "52710"
+    },
+    {
+      "code": "5272000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "진안군",
+      "officialName": "전북특별자치도 진안군",
+      "displayName": "진안군",
+      "pathCode": "52720"
+    },
+    {
+      "code": "5273000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "무주군",
+      "officialName": "전북특별자치도 무주군",
+      "displayName": "무주군",
+      "pathCode": "52730"
+    },
+    {
+      "code": "5274000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "장수군",
+      "officialName": "전북특별자치도 장수군",
+      "displayName": "장수군",
+      "pathCode": "52740"
+    },
+    {
+      "code": "5275000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "임실군",
+      "officialName": "전북특별자치도 임실군",
+      "displayName": "임실군",
+      "pathCode": "52750"
+    },
+    {
+      "code": "5277000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "순창군",
+      "officialName": "전북특별자치도 순창군",
+      "displayName": "순창군",
+      "pathCode": "52770"
+    },
+    {
+      "code": "5279000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "고창군",
+      "officialName": "전북특별자치도 고창군",
+      "displayName": "고창군",
+      "pathCode": "52790"
+    },
+    {
+      "code": "5280000000",
+      "provinceCode": "5200000000",
+      "provinceName": "전북특별자치도",
+      "provinceShortName": "전북",
+      "districtName": "부안군",
+      "officialName": "전북특별자치도 부안군",
+      "displayName": "부안군",
+      "pathCode": "52800"
+    }
+  ]
+}

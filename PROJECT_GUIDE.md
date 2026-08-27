@@ -8,7 +8,7 @@
 - 상품명: 자판기렌탈
 - 현재 위치: 새 자판기 전용 저장소 루트
 - 경로 기준: HTML, CSS, JS, 이미지 링크는 저장소 루트 `/` 기준
-- 현재 색인 정책: 실제 도메인 공개 전까지 모든 페이지는 `noindex,nofollow`
+- 현재 색인 정책: 지역 확장 작업 기준으로 모든 페이지는 `index,follow`
 - 현재 sitemap 정책: 공개 전까지 sitemap은 생성하지 않음
 
 ## 핵심 키워드
@@ -44,21 +44,31 @@
 
 ```text
 /
-/region/seoul/eunpyeong-gu/
-/region/seoul/eunpyeong-gu/{dong-slug}/
+/region/
+/region/{province-slug}/
+/region/{province-slug}/{district-slug}/
+/region/{province-slug}/{district-slug}/{dong-slug}/
 ```
 
 HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 
-## 현재 샘플 페이지
+## 현재 생성 페이지
 
-현재까지 만든 샘플 범위는 서울 은평구 전체입니다.
+현재 1차 확장은 전국 시/구/군 단위까지 생성되어 있습니다.
 
 - 홈 1개
-- 은평구 구단위 페이지 1개
+- 테스트용 전체 지역 카테고리 1개
+- 테스트용 시도별 카테고리 16개
+- 전국 시/구/군 페이지 269개
 - 은평구 하위 동단위 페이지 11개
 
-하위 동 목록:
+전체 지역 URL 목록 파일:
+
+```text
+data/generated-urls.txt
+```
+
+현재 동단위 상세 생성 범위:
 
 - 녹번동
 - 불광동
@@ -72,40 +82,73 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 - 수색동
 - 진관동
 
-현재 URL 목록 파일:
-
-```text
-vending-test-eunpyeong-page-urls.txt
-```
-
 ## 지역 페이지 생성 기준
 
 지역 확장은 관리지역 기준으로 진행합니다.
 
-- 기존 POS 사이트에서 사용한 `관리지역.txt` 방식을 자판기 프로젝트에도 적용
-- 관리지역에 없는 지역은 생성하지 않음
-- 구/시/군 단위 페이지와 하위 읍/면/동 페이지를 함께 생성
+- 현재 `/region/`, `/region/{province-slug}/` 카테고리 페이지는 테스트 확인용 내부 링크 허브
+- 테스트가 끝나면 생성기에서 카테고리 출력과 홈/헤더 링크를 제거할 수 있음
+- 1차: 공식 법정동코드 기준 전국 시/구/군 단위 페이지 생성
+- 2차: 필요한 지역부터 하위 읍/면/동 페이지 확장
+- 시/구/군 페이지는 동 목록이 없어도 생성 가능
+- 하위 동 목록이 있는 구/시/군 페이지에만 동단위 검색 기능 표시
 - `~1동`, `~2동`, `~제1동`, `~1.2동`처럼 숫자로 나뉜 행정동은 생활권 기준으로 통합
 - 동단위 페이지는 고객이 볼 가능성이 높으므로 구단위보다 상세하고 자연스러운 문구 사용
 
 현재 저장소의 확장 기준 파일:
 
 ```text
+data/official-sigungu.json
+data/official-sigungu.txt
 data/regions.json
 scripts/generate-regions.js
+scripts/extract-official-sigungu.js
+scripts/sync-regions-from-official.js
+scripts/enhance-region-local-info.js
+scripts/fetch-wikidata-direct-pois.js
+scripts/fetch-osm-local-pois.js
 ```
+
+1차 전국 시/구/군 확장 기준:
+
+- 원본: 행정표준코드관리시스템 법정동코드 전체자료
+- 다운로드 위치: `data/source/code-go-kr-regcode-full-download.bin`
+- 추출 결과: `data/official-sigungu.json`, `data/official-sigungu.txt`
+- 추출 기준: 현존 법정동코드 중 `시도 2자리 + 시군구 3자리 + 00000` 형식
+- 이 기준에는 `수원시`와 `수원시 장안구`처럼 시와 일반구가 함께 포함될 수 있음
+- 기존 `지역명_시군구300.txt`는 `data/source/seo-region-candidates-300.txt`에 SEO 후보 원본으로 보존
+
+지역 고유정보 보강 기준:
+
+- 기본 생활권 신호: 공식 원본의 하위 읍/면/동 또는 일반구 이름
+- POI 보강 데이터: `data/wikidata-local-pois.json`
+- 보조 POI 데이터: `data/osm-local-pois.json`
+- `fetch-wikidata-direct-pois.js`는 Wikidata Query Service에서 시/구/군별 역, 대학, 병원, 공원, 산, 박물관, 상업시설 등 직접 소속 POI를 수집
+- `fetch-osm-local-pois.js`는 OpenStreetMap Overpass API 기반 보조 수집 스크립트이며, API 제한이 잦으므로 필요 지역만 천천히 재시도
+- `enhance-region-local-info.js`는 하위 일반구가 있는 시 페이지에 하위 구 POI도 함께 병합
+- POI 데이터는 공개 데이터 품질에 따라 노이즈가 섞일 수 있으므로 생성 전 필터링 규칙을 유지
+- 고객 페이지 본문에는 `법정동` 같은 행정 데이터 용어를 노출하지 않음
+- 고객용 표현은 `주요 생활권`, `역세권`, `주요 시설`, `인근 상권`, `이동 동선`처럼 자연스러운 상담 문구 사용
 
 사용 방식:
 
 ```text
+node scripts/extract-official-sigungu.js
+node scripts/sync-regions-from-official.js
+node scripts/fetch-wikidata-direct-pois.js
+node scripts/enhance-region-local-info.js
 node scripts/generate-regions.js
 node scripts/generate-regions.js --write
 ```
 
-- 첫 번째 명령은 생성될 파일만 확인하는 dry-run
-- 두 번째 명령은 `data/regions.json` 기준으로 구/동 페이지 생성 또는 갱신
-- 새 지역은 `data/regions.json`에 시도명, slug, 구/시/군명, 하위 동 목록과 지역 문구를 추가한 뒤 생성
-- 공개 전까지 생성 페이지의 `noindex,nofollow`는 유지
+- `extract-official-sigungu.js`는 공식 법정동코드 원본에서 1차 시/구/군 목록을 재생성
+- `sync-regions-from-official.js`는 공식 시/구/군 목록을 `data/regions.json`에 반영하고 기존 동단위 데이터는 보존
+- `fetch-wikidata-direct-pois.js`는 이미 수집된 지역은 건너뛰며, `--province=seoul`, `--limit=10`처럼 범위를 좁혀 재실행 가능
+- `enhance-region-local-info.js`는 공식 하위 읍/면/동 또는 일반구 이름과 POI를 각 시/구/군의 고유 생활권 문구로 반영하고 `index,follow`를 적용
+- `generate-regions.js` 첫 번째 명령은 생성될 파일만 확인하는 dry-run
+- `generate-regions.js --write`는 `data/regions.json` 기준으로 시/구/군 및 동단위 페이지 생성 또는 갱신
+- 새 동단위 지역은 `data/regions.json`의 해당 시/구/군 `dongs`에 slug, 지역 문구, 인근 상권 문구를 추가한 뒤 생성
+- 생성 페이지는 현재 `index,follow` 기준으로 출력
 
 ## 메타설명문 규칙
 
@@ -298,14 +341,14 @@ assets/js/vending.js
 
 ## SEO 공개 전환 체크리스트
 
-새 저장소에서 실제 도메인으로 공개하기 전까지는 `noindex,nofollow`를 유지합니다.
+현재 지역 확장 작업 기준으로는 `index,follow`를 사용합니다.
 
 공개 직전 작업:
 
 - canonical 도메인 최종 확인
 - `og:url` 도메인 최종 확인
 - `og:image` 절대 URL 최종 확인
-- `noindex,nofollow` 제거
+- `index,follow` 반영 확인
 - `robots.txt` 생성 또는 수정
 - `sitemap.xml` 생성
 - 생성된 전체 URL 목록 파일 저장
@@ -322,7 +365,7 @@ assets/js/vending.js
 5. `node scripts/generate-regions.js --write`로 페이지 생성
 6. 생성된 URL 목록 파일 저장
 7. 홈/지역 홈/대표 동페이지 로컬 확인
-8. `noindex` 상태로 전체 검수
+8. `index,follow` 상태로 전체 검수
 9. 도메인 연결 직전에 SEO 공개 전환 체크리스트 수행
 
 ## 현재 로컬 확인 방법
