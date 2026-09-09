@@ -70,14 +70,28 @@ function slugForUnit(name, used) {
   return slug;
 }
 
-function stripDistrictPrefix(fullName, districtOfficialName) {
-  return fullName.replace(`${districtOfficialName.trim()} `, '').trim();
+function stripDistrictPrefix(fullName, district) {
+  const officialPrefix = `${district.officialName.trim()} `;
+  if (fullName.startsWith(officialPrefix)) {
+    return fullName.slice(officialPrefix.length).trim();
+  }
+
+  const parts = fullName.trim().split(/\s+/);
+  const districtNameParts = district.districtName.trim().split(/\s+/);
+  const index = parts.findIndex((_, partIndex) =>
+    districtNameParts.every((part, offset) => parts[partIndex + offset] === part)
+  );
+  if (index >= 0) {
+    return parts.slice(index + districtNameParts.length).join(' ').trim();
+  }
+
+  return fullName.trim();
 }
 
 function localUnitNamesForDistrict(district, legalRows) {
   return legalRows
     .filter(([code]) => code.startsWith(district.pathCode) && code !== district.code && code.slice(8) === '00')
-    .map(([, fullName]) => stripDistrictPrefix(fullName, district.officialName))
+    .map(([, fullName]) => stripDistrictPrefix(fullName, district))
     .filter((name) => name && !name.includes(' '))
     .filter((name) => !/^\d/.test(name));
 }
