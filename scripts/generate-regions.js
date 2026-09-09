@@ -187,9 +187,9 @@ function productSection(products) {
 </div></section>`;
 }
 
-function guideSection(regionName, tags) {
+function guideSection(tags) {
   return `<section class="section" aria-labelledby="guide-title"><div class="wrap">
-<div class="section-head"><span class="kicker">상담 기준</span><h2 id="guide-title">사업장 조건별 자판기 구성 기준</h2><p>${escapeHtml(regionName)} 담당자와 상담할 때는 모델명보다 운영하려는 공간과 상품 종류를 먼저 정리하는 것이 좋습니다.</p></div>
+<div class="section-head"><span class="kicker">상담 기준</span><h2 id="guide-title">사업장 조건별 자판기 구성 기준</h2><p>상담할 때는 모델명보다 운영하려는 공간과 상품 종류를 먼저 정리하는 것이 좋습니다.</p></div>
 <div class="grid-2">
 <article class="panel"><h3>추천 검토 업종</h3><div class="tags">${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</div><p>무인 운영이 필요한 공간, 직원 복지 공간, 고객 대기 공간, 야간 판매가 필요한 매장 위치에 우선 적용할 수 있습니다.</p></article>
 <article class="panel"><h3>확인 항목</h3><ul class="check-list"><li>설치 공간의 폭, 깊이, 문 열림 공간</li><li>냉장형·냉동형·상온형 중 필요한 온도 조건</li><li>카드·간편결제·키오스크 화면 필요 여부</li><li>상품 보충과 원격 관리 방식</li></ul></article>
@@ -232,7 +232,7 @@ function districtSearch(district) {
 <div class="search-box" data-region-search-scope>
 <span class="kicker">동단위 검색</span>
 <h2 id="dong-search-title">하위 상세 페이지 찾기</h2>
-<p>동 이름을 입력하면 해당 상담 페이지가 표시됩니다. 숫자로 나뉜 행정동은 생활권 기준으로 통합했습니다.</p>
+<p>동 이름을 입력하면 해당 상담 페이지가 표시됩니다. 비슷한 생활권은 고객이 찾기 쉬운 이름을 기준으로 정리했습니다.</p>
 <div class="search-row"><label class="sr-only" for="dong-search">동 검색</label><input id="dong-search" type="search" autocomplete="off" placeholder="예: 응암동, 진관동, 불광동" data-region-search-input/><div class="search-meta">검색결과 <strong data-region-search-count>0</strong> / 전체 ${total}개</div></div>
 <div class="link-grid">${links}</div>
 <p class="empty" data-region-search-empty></p>
@@ -351,7 +351,7 @@ function renderPage(site, district, dong) {
     description: metaDescription(parentName, regionName),
     url: absoluteUrl(site, urlPath),
     ogImage: absoluteUrl(site, `/assets/images/${heroImage}`),
-    faq: faqItems.map(([question, answer], index) => [index === 0 ? `${regionName}에서 ${question}` : question, answer]),
+    faq: faqItems,
     h1: `${regionName} 무인자판기 렌탈 상담`,
     lead: `${regionName} 일대의 매장 위치와 상권 특성에 맞춰 냉장형·냉동형 멀티자판기, 픽업블록 기능, 무인 운영 방식을 함께 검토합니다. ${dong ? dong.lead : district.lead}`,
     heroImage,
@@ -360,11 +360,11 @@ function renderPage(site, district, dong) {
 
   const content = [
     hero(page),
-    dong ? contextSection('상권 특성에 맞춘 설치 상담', dong.lead, dong.nearby) : ((district.dongs || []).length ? districtSearch(district) : ''),
+    dong ? contextSection('상권 특성에 맞춘 설치 상담', dong.context || dong.lead, dong.nearby) : ((district.dongs || []).length ? districtSearch(district) : ''),
     !dong ? contextSection('상권 특성에 맞춘 설치 상담', district.context, district.nearby) : '',
     marketingSection(),
     productSection(selectedProducts(seed)),
-    guideSection(regionName, district.tags),
+    guideSection(district.tags),
     faqSection(page.faq),
     finalCta(regionName)
   ].filter(Boolean).join('\n');

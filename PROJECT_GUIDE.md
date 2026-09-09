@@ -54,13 +54,13 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 
 ## 현재 생성 페이지
 
-현재 1차 확장은 전국 시/구/군 단위까지 생성되어 있습니다.
+현재 1차 확장은 전국 시/구/군 단위까지, 2차 확장은 서울 전체 동단위까지 생성되어 있습니다.
 
 - 홈 1개
 - 테스트용 전체 지역 카테고리 1개
 - 테스트용 시도별 카테고리 16개
 - 전국 시/구/군 페이지 269개
-- 은평구 하위 동단위 페이지 11개
+- 서울 하위 동단위 페이지 467개
 
 전체 지역 URL 목록 파일:
 
@@ -70,17 +70,10 @@ data/generated-urls.txt
 
 현재 동단위 상세 생성 범위:
 
-- 녹번동
-- 불광동
-- 갈현동
-- 구산동
-- 대조동
-- 응암동
-- 역촌동
-- 신사동
-- 증산동
-- 수색동
-- 진관동
+- 서울 25개 구 전체
+- 총 467개 동단위 페이지
+- 은평구 11개 동은 기존 수동 샘플 문구를 보존
+- 나머지 서울 동 페이지는 공식 하위 동명, 인접 동명, 구 단위 POI를 조합한 자동 문구 사용
 
 ## 지역 페이지 생성 기준
 
@@ -92,7 +85,7 @@ data/generated-urls.txt
 - 2차: 필요한 지역부터 하위 읍/면/동 페이지 확장
 - 시/구/군 페이지는 동 목록이 없어도 생성 가능
 - 하위 동 목록이 있는 구/시/군 페이지에만 동단위 검색 기능 표시
-- `~1동`, `~2동`, `~제1동`, `~1.2동`처럼 숫자로 나뉜 행정동은 생활권 기준으로 통합
+- `~1동`, `~2동`, `~제1동`, `~1.2동`처럼 숫자로 나뉜 지역명은 생활권 기준으로 통합 여부를 검토
 - 동단위 페이지는 고객이 볼 가능성이 높으므로 구단위보다 상세하고 자연스러운 문구 사용
 
 현재 저장소의 확장 기준 파일:
@@ -104,6 +97,7 @@ data/regions.json
 scripts/generate-regions.js
 scripts/extract-official-sigungu.js
 scripts/sync-regions-from-official.js
+scripts/sync-seoul-dongs-from-official.js
 scripts/enhance-region-local-info.js
 scripts/fetch-wikidata-direct-pois.js
 scripts/fetch-osm-local-pois.js
@@ -137,6 +131,7 @@ node scripts/extract-official-sigungu.js
 node scripts/sync-regions-from-official.js
 node scripts/fetch-wikidata-direct-pois.js
 node scripts/enhance-region-local-info.js
+node scripts/sync-seoul-dongs-from-official.js
 node scripts/generate-regions.js
 node scripts/generate-regions.js --write
 ```
@@ -145,6 +140,7 @@ node scripts/generate-regions.js --write
 - `sync-regions-from-official.js`는 공식 시/구/군 목록을 `data/regions.json`에 반영하고 기존 동단위 데이터는 보존
 - `fetch-wikidata-direct-pois.js`는 이미 수집된 지역은 건너뛰며, `--province=seoul`, `--limit=10`처럼 범위를 좁혀 재실행 가능
 - `enhance-region-local-info.js`는 공식 하위 읍/면/동 또는 일반구 이름과 POI를 각 시/구/군의 고유 생활권 문구로 반영하고 `index,follow`를 적용
+- `sync-seoul-dongs-from-official.js`는 서울 25개 구의 하위 동 목록을 `data/regions.json`에 반영하고, 은평구 수동 샘플 문구는 보존
 - `generate-regions.js` 첫 번째 명령은 생성될 파일만 확인하는 dry-run
 - `generate-regions.js --write`는 `data/regions.json` 기준으로 시/구/군 및 동단위 페이지 생성 또는 갱신
 - 새 동단위 지역은 `data/regions.json`의 해당 시/구/군 `dongs`에 slug, 지역 문구, 인근 상권 문구를 추가한 뒤 생성
@@ -359,7 +355,7 @@ assets/js/vending.js
 권장 순서:
 
 1. 관리지역 기준 원본 목록 확인
-2. 숫자로 나뉜 행정동은 생활권 기준으로 통합
+2. 숫자로 나뉜 지역명은 생활권 기준으로 통합 여부 확인
 3. `data/regions.json`에 구/시/군과 하위 동 정보 추가
 4. `node scripts/generate-regions.js`로 생성 대상 확인
 5. `node scripts/generate-regions.js --write`로 페이지 생성
