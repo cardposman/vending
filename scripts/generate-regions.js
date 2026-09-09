@@ -228,12 +228,13 @@ function districtSearch(district) {
   const dongs = district.dongs || [];
   const total = dongs.length;
   const links = dongs.map((dong) => `<a class="link-card is-hidden" data-region-search-item data-region-search-text="${escapeHtml(`${district.provinceName} ${district.districtName} ${dong.name}`)}" href="${pagePath(district, dong)}">${escapeHtml(dong.name)}</a>`).join('');
+  const examples = dongs.slice(0, 3).map((dong) => dong.name).join(', ') || '지역명';
   return `<section class="section" aria-labelledby="dong-search-title"><div class="wrap">
 <div class="search-box" data-region-search-scope>
 <span class="kicker">동단위 검색</span>
 <h2 id="dong-search-title">하위 상세 페이지 찾기</h2>
-<p>동 이름을 입력하면 해당 상담 페이지가 표시됩니다. 비슷한 생활권은 고객이 찾기 쉬운 이름을 기준으로 정리했습니다.</p>
-<div class="search-row"><label class="sr-only" for="dong-search">동 검색</label><input id="dong-search" type="search" autocomplete="off" placeholder="예: 응암동, 진관동, 불광동" data-region-search-input/><div class="search-meta">검색결과 <strong data-region-search-count>0</strong> / 전체 ${total}개</div></div>
+<p>지역명을 입력하면 해당 상담 페이지가 표시됩니다. 비슷한 생활권은 고객이 찾기 쉬운 이름을 기준으로 정리했습니다.</p>
+<div class="search-row"><label class="sr-only" for="dong-search">하위 지역 검색</label><input id="dong-search" type="search" autocomplete="off" placeholder="예: ${escapeHtml(examples)}" data-region-search-input/><div class="search-meta">검색결과 <strong data-region-search-count>0</strong> / 전체 ${total}개</div></div>
 <div class="link-grid">${links}</div>
 <p class="empty" data-region-search-empty></p>
 </div></div></section>`;
