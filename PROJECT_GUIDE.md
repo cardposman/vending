@@ -54,7 +54,7 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 
 ## 현재 생성 페이지
 
-현재 1차 확장은 전국 시/구/군 단위까지, 2차 확장은 서울, 경기, 인천, 부산, 대구, 대전 하위 지역까지 생성되어 있습니다.
+현재 1차 확장은 전국 시/구/군 단위까지, 2차 확장은 서울, 경기, 인천, 부산, 대구, 대전, 울산 하위 지역까지 생성되어 있습니다.
 
 - 홈 1개
 - 테스트용 전체 지역 카테고리 1개
@@ -66,6 +66,7 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 - 부산 하위 지역 페이지 192개
 - 대구 하위 지역 페이지 212개
 - 대전 하위 지역 페이지 177개
+- 울산 하위 지역 페이지 84개
 
 전체 지역 URL 목록 파일:
 
@@ -81,7 +82,8 @@ data/generated-urls.txt
 - 부산 16개 구/군 전체
 - 대구 9개 구/군 전체
 - 대전 5개 구 전체
-- 총 1,951개 하위 지역 페이지
+- 울산 5개 구/군 전체
+- 총 2,035개 하위 지역 페이지
 - 은평구 11개 동은 기존 수동 샘플 문구를 보존
 - 나머지 하위 지역 페이지는 공식 하위 지역명, 인접 지역명, 시/구/군 단위 POI를 조합한 자동 문구 사용
 
@@ -147,6 +149,7 @@ node scripts/sync-local-units-from-official.js --province=incheon
 node scripts/sync-local-units-from-official.js --province=busan
 node scripts/sync-local-units-from-official.js --province=daegu
 node scripts/sync-local-units-from-official.js --province=daejeon
+node scripts/sync-local-units-from-official.js --province=ulsan
 node scripts/generate-regions.js
 node scripts/generate-regions.js --write
 ```
