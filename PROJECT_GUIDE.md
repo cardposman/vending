@@ -54,7 +54,7 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 
 ## 현재 생성 페이지
 
-현재 1차 확장은 전국 시/구/군 단위까지, 2차 확장은 서울, 경기, 인천, 부산, 대구, 대전, 울산, 세종, 충북, 충남, 경북, 경남, 제주 하위 지역까지 생성되어 있습니다.
+현재 1차 확장은 전국 시/구/군 단위까지, 2차 확장은 서울, 경기, 인천, 부산, 대구, 대전, 울산, 세종, 충북, 충남, 경북, 경남, 제주, 강원 하위 지역까지 생성되어 있습니다.
 
 - 홈 1개
 - 테스트용 전체 지역 카테고리 1개
@@ -73,6 +73,7 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 - 경북 하위 지역 페이지 525개
 - 경남 하위 지역 페이지 546개
 - 제주 하위 지역 페이지 74개
+- 강원 하위 지역 페이지 298개
 
 전체 지역 URL 목록 파일:
 
@@ -95,7 +96,8 @@ data/generated-urls.txt
 - 경북 23개 시/군/일반구 전체
 - 경남 22개 시/군/일반구 전체
 - 제주 2개 시 전체
-- 총 3,736개 하위 지역 페이지
+- 강원 18개 시/군 전체
+- 총 4,034개 하위 지역 페이지
 - 은평구 11개 동은 기존 수동 샘플 문구를 보존
 - 나머지 하위 지역 페이지는 공식 하위 지역명, 인접 지역명, 시/구/군 단위 POI를 조합한 자동 문구 사용
 
@@ -168,6 +170,7 @@ node scripts/sync-local-units-from-official.js --province=chungcheongnam-do
 node scripts/sync-local-units-from-official.js --province=gyeongsangbuk-do
 node scripts/sync-local-units-from-official.js --province=gyeongsangnam-do
 node scripts/sync-local-units-from-official.js --province=jeju
+node scripts/sync-local-units-from-official.js --province=gangwon
 node scripts/generate-regions.js
 node scripts/generate-regions.js --write
 ```
