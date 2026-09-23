@@ -8,8 +8,10 @@
 - 상품명: 자판기렌탈
 - 현재 위치: 새 자판기 전용 저장소 루트
 - 경로 기준: HTML, CSS, JS, 이미지 링크는 저장소 루트 `/` 기준
+- 공개 도메인: `https://tsvend.com`
 - 현재 색인 정책: 지역 확장 작업 기준으로 모든 페이지는 `index,follow`
-- 현재 sitemap 정책: 공개 전까지 sitemap은 생성하지 않음
+- 현재 sitemap 정책: `https://tsvend.com` 기준으로 `sitemap.xml`, `robots.txt` 생성
+- GitHub Pages custom domain 파일: `CNAME`
 
 ## 핵심 키워드
 
@@ -129,6 +131,7 @@ scripts/extract-official-sigungu.js
 scripts/sync-regions-from-official.js
 scripts/sync-local-units-from-official.js
 scripts/enhance-region-local-info.js
+scripts/generate-sitemap.js
 scripts/fetch-wikidata-direct-pois.js
 scripts/fetch-osm-local-pois.js
 ```
@@ -179,6 +182,7 @@ node scripts/sync-local-units-from-official.js --province=jeonbuk
 node scripts/sync-local-units-from-official.js --province=gwangju-jeonnam
 node scripts/generate-regions.js
 node scripts/generate-regions.js --write
+node scripts/generate-sitemap.js
 ```
 
 - `extract-official-sigungu.js`는 공식 법정동코드 원본에서 1차 시/구/군 목록을 재생성
@@ -188,6 +192,7 @@ node scripts/generate-regions.js --write
 - `sync-local-units-from-official.js`는 지정한 시도 단위의 하위 읍/면/동 목록을 `data/regions.json`에 반영하고, 은평구 수동 샘플 문구는 보존
 - `generate-regions.js` 첫 번째 명령은 생성될 파일만 확인하는 dry-run
 - `generate-regions.js --write`는 `data/regions.json` 기준으로 시/구/군 및 동단위 페이지 생성 또는 갱신
+- `generate-sitemap.js`는 `data/generated-urls.txt`와 `data/regions.json`의 `site.origin`을 기준으로 `sitemap.xml`, `robots.txt`를 생성
 - 새 하위 지역은 `data/regions.json`의 해당 시/구/군 `dongs`에 slug, 지역 문구, 인근 상권 문구를 추가한 뒤 생성
 - 생성 페이지는 현재 `index,follow` 기준으로 출력
 
@@ -384,11 +389,12 @@ assets/js/vending.js
 
 현재 지역 확장 작업 기준으로는 `index,follow`를 사용합니다.
 
-공개 직전 작업:
+공개 상태 확인 작업:
 
-- canonical 도메인 최종 확인
-- `og:url` 도메인 최종 확인
-- `og:image` 절대 URL 최종 확인
+- `CNAME`에 `tsvend.com` 반영 확인
+- canonical 도메인 `https://tsvend.com` 확인
+- `og:url` 도메인 `https://tsvend.com` 확인
+- `og:image` 절대 URL `https://tsvend.com` 확인
 - `index,follow` 반영 확인
 - `robots.txt` 생성 또는 수정
 - `sitemap.xml` 생성
@@ -427,5 +433,5 @@ http://127.0.0.1:{port}/region/seoul/eunpyeong-gu/
 - 새 프로젝트에서는 POS 사이트의 `assets`, `sitemap.xml`, URL 목록 파일과 섞지 않음
 - 지역명 반복을 늘리지 않음
 - 페이지 제목은 SEO용 `<title>`에 적용하고, 화면 H1은 짧고 자연스럽게 유지
-- 검색엔진 공개 전까지 sitemap에 테스트 URL을 넣지 않음
+- 공개 도메인 변경 시 `data/regions.json`의 `site.origin`, 홈 절대 URL, `sitemap.xml`, `robots.txt`를 함께 갱신
 - 생성 결과가 생기면 URL 목록 파일을 반드시 남김
