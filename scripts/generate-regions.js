@@ -135,7 +135,7 @@ function head(site, page) {
 <meta property="og:image" content="${escapeHtml(page.ogImage)}"/>
 <meta property="og:image:alt" content="TS밴딩시스템 무인자판기 상담 이미지"/>
 <meta property="og:site_name" content="${escapeHtml(site.name)}"/>
-<link rel="stylesheet" href="/assets/css/vending.css?v=20261016a"/>
+<link rel="stylesheet" href="/assets/css/vending.css?v=20261016b"/>
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>`;
 }
@@ -145,16 +145,15 @@ function header(district, activeDistrict) {
   return `<header class="site-header"><div class="wrap header-inner">
 <a class="logo" href="/">TS밴딩시스템</a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">메뉴 열기</span></button>
-<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="/region/">지역별 상담</a><a href="${pagePath(district)}"${districtCurrent}>${escapeHtml(district.districtName)}</a><a href="#contact">상담하기</a></nav>
+<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="/startup-solution/">무인매장 창업솔루션</a><a href="${pagePath(district)}"${districtCurrent}>${escapeHtml(district.districtName)}</a><a href="#contact">상담하기</a></nav>
 </div></header>`;
 }
 
-function categoryHeader(activeRegion = false) {
-  const regionCurrent = activeRegion ? ' aria-current="page"' : '';
+function categoryHeader() {
   return `<header class="site-header"><div class="wrap header-inner">
 <a class="logo" href="/">TS밴딩시스템</a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">메뉴 열기</span></button>
-<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="/region/"${regionCurrent}>지역별 상담</a><a href="#contact">상담하기</a></nav>
+<nav id="site-nav" class="nav" aria-label="주요 메뉴"><a href="/">홈</a><a href="/startup-solution/">무인매장 창업솔루션</a><a href="#contact">상담하기</a></nav>
 </div></header>`;
 }
 
@@ -224,23 +223,7 @@ function footer() {
 <button class="primary" type="button" onclick="callNow()">전화 상담</button>
 <button class="secondary" type="button" onclick="openNaverForm()">상담예약</button>
 </div></div></div>
-<script src="/assets/js/vending.js?v=20261016a"></script>`;
-}
-
-function districtSearch(district) {
-  const dongs = district.dongs || [];
-  const total = dongs.length;
-  const links = dongs.map((dong) => `<a class="link-card is-hidden" data-region-search-item data-region-search-text="${escapeHtml(`${district.provinceName} ${district.districtName} ${dong.name}`)}" href="${pagePath(district, dong)}">${escapeHtml(dong.name)}</a>`).join('');
-  const examples = dongs.slice(0, 3).map((dong) => dong.name).join(', ') || '지역명';
-  return `<section class="section" aria-labelledby="dong-search-title"><div class="wrap">
-<div class="search-box" data-region-search-scope>
-<span class="kicker">동단위 검색</span>
-<h2 id="dong-search-title">하위 상세 페이지 찾기</h2>
-<p>지역명을 입력하면 해당 상담 페이지가 표시됩니다. 비슷한 생활권은 고객이 찾기 쉬운 이름을 기준으로 정리했습니다.</p>
-<div class="search-row"><label class="sr-only" for="dong-search">하위 지역 검색</label><input id="dong-search" type="search" autocomplete="off" placeholder="예: ${escapeHtml(examples)}" data-region-search-input/><div class="search-meta">검색결과 <strong data-region-search-count>0</strong> / 전체 ${total}개</div></div>
-<div class="link-grid">${links}</div>
-<p class="empty" data-region-search-empty></p>
-</div></div></section>`;
+<script src="/assets/js/vending.js?v=20261016b"></script>`;
 }
 
 function contextSection(title, context, nearby, page) {
@@ -276,7 +259,7 @@ function renderCategoryPage(site, page, content) {
 <html lang="ko">
 ${head(site, page)}
 <body>
-${categoryHeader(true)}
+${categoryHeader()}
 <main>
 ${content}
 </main>
@@ -368,7 +351,6 @@ function renderPage(site, district, dong) {
   const content = [
     hero(page),
     marketingSection(),
-    !dong && (district.dongs || []).length ? districtSearch(district) : '',
     contextSection('상권 특성에 맞춘 설치 상담', dong ? dong.context || dong.lead : district.context, dong ? dong.nearby : district.nearby, page),
     productSection(selectedProducts(seed)),
     guideSection(district.tags),

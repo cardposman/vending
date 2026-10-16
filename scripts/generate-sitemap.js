@@ -29,7 +29,7 @@ function readUrlPaths() {
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter(Boolean);
-  return ['/', ...paths];
+  return ['/', '/startup-solution/', ...paths];
 }
 
 function main() {
