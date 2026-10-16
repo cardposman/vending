@@ -39,10 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') setOpen(false);
     });
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 900) setOpen(false);
-    });
   });
 
   document.querySelectorAll('[data-region-search-scope]').forEach((scope) => {

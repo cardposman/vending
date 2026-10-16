@@ -135,7 +135,7 @@ function head(site, page) {
 <meta property="og:image" content="${escapeHtml(page.ogImage)}"/>
 <meta property="og:image:alt" content="TS밴딩시스템 무인자판기 상담 이미지"/>
 <meta property="og:site_name" content="${escapeHtml(site.name)}"/>
-<link rel="stylesheet" href="/assets/css/vending.css?v=20260805b"/>
+<link rel="stylesheet" href="/assets/css/vending.css?v=20261016a"/>
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>`;
 }
@@ -164,16 +164,19 @@ function hero(page) {
 <h1>${escapeHtml(page.h1)}</h1>
 <p class="lead">${escapeHtml(page.lead)}</p>
 <div class="hero-actions"><button class="primary" type="button" onclick="callNow()">전화 상담하기</button><button class="secondary" type="button" onclick="openNaverForm()">상담예약하기</button></div>
-<div class="hero-points"><span>방문설치 상담</span><span>무인 운영 검토</span><span>상품 구성 안내</span></div>
-</div><aside class="hero-panel"><img src="/assets/images/${page.heroImage}" alt="${escapeHtml(page.heroAlt)}"/></aside></div></section>`;
+</div></div></section>`;
+}
+
+function representativeImage(page) {
+  return `<aside class="hero-panel"><img src="/assets/images/${page.heroImage}" alt="${escapeHtml(page.heroAlt)}" loading="lazy"/></aside>`;
 }
 
 function marketingSection() {
-  return `<section class="section" aria-labelledby="marketing-title"><div class="wrap">
-<div class="section-head"><span class="kicker">마케팅 안내</span><h2 id="marketing-title">공간에 맞는 자판기 운영 방식을 한 번에 검토합니다</h2>
+  return `<section class="section marketing-section" aria-labelledby="marketing-title"><div class="wrap">
+<div class="section-head sr-only"><span class="kicker">마케팅 안내</span><h2 id="marketing-title">공간에 맞는 자판기 운영 방식을 한 번에 검토합니다</h2>
 <p>무인 운영, 냉장·냉동 상품, 픽업블록 기능, 광고형 디스플레이까지 설치 공간의 목적에 맞춰 상담할 수 있습니다.</p></div>
 <div class="media-stack">
-<figure class="long-media"><img src="/assets/images/vending-marketing-1.webp" alt="24시간 무인 판매 솔루션 안내" loading="lazy"/><figcaption>24시간 무인 판매 솔루션</figcaption></figure>
+<figure class="long-media"><img src="/assets/images/vending-marketing-1.webp" alt="24시간 무인 판매 솔루션 안내" fetchpriority="high"/><figcaption>24시간 무인 판매 솔루션</figcaption></figure>
 <figure class="long-media"><img src="/assets/images/vending-marketing-2.webp" alt="맞춤 배출 타입과 원격 운영 안내" loading="lazy"/><figcaption>맞춤 배출 타입과 원격 운영 안내</figcaption></figure>
 </div></div></section>`;
 }
@@ -221,7 +224,7 @@ function footer() {
 <button class="primary" type="button" onclick="callNow()">전화 상담</button>
 <button class="secondary" type="button" onclick="openNaverForm()">상담예약</button>
 </div></div></div>
-<script src="/assets/js/vending.js"></script>`;
+<script src="/assets/js/vending.js?v=20261016a"></script>`;
 }
 
 function districtSearch(district) {
@@ -240,8 +243,9 @@ function districtSearch(district) {
 </div></div></section>`;
 }
 
-function contextSection(title, context, nearby) {
+function contextSection(title, context, nearby, page) {
   return `<section class="section" aria-labelledby="context-title"><div class="wrap">
+${representativeImage(page)}
 <div class="grid-2">
 <article class="panel"><span class="kicker">지역 소개</span><h2 id="context-title">${escapeHtml(title)}</h2><p>${escapeHtml(context)}</p><p>이 지역은 운영 품목, 고객 체류 시간, 관리 가능 시간에 따라 적합한 모델이 달라질 수 있습니다.</p></article>
 <article class="panel"><span class="kicker">인근 상권</span><h2>매장 위치와 생활권 확인</h2><p>${escapeHtml(nearby)}</p><ul class="check-list"><li>방문객 체류 시간과 피크 시간대 확인</li><li>냉장·냉동 상품과 일반 상품 분리 운영 검토</li><li>전원 위치, 문 열림 공간, 관리 동선 확인</li></ul></article>
@@ -306,6 +310,7 @@ function renderRegionHub(site, districts) {
 <div class="section-head"><span class="kicker">지역 카테고리</span><h2 id="region-category-title">시도별 상담 지역</h2><p>현재 생성된 전국 시/구/군 페이지를 시도 단위로 묶었습니다.</p></div>
 ${categoryLinkGrid(links)}
 </div></section>`,
+    `<section class="section"><div class="wrap">${representativeImage(page)}</div></section>`,
     faqSection(page.faq),
     finalCta('전국')
   ].join('\n');
@@ -335,6 +340,7 @@ function renderProvinceHub(site, group) {
 <div class="section-head"><span class="kicker">시/구/군 카테고리</span><h2 id="province-category-title">${escapeHtml(group.provinceName)} 상담 지역</h2><p>테스트를 위해 현재 생성된 ${escapeHtml(group.provinceName)} 지역 페이지를 모두 연결했습니다.</p></div>
 ${categoryLinkGrid(links)}
 </div></section>`,
+    `<section class="section"><div class="wrap">${representativeImage(page)}</div></section>`,
     faqSection(page.faq),
     finalCta(group.provinceName)
   ].join('\n');
@@ -361,9 +367,9 @@ function renderPage(site, district, dong) {
 
   const content = [
     hero(page),
-    dong ? contextSection('상권 특성에 맞춘 설치 상담', dong.context || dong.lead, dong.nearby) : ((district.dongs || []).length ? districtSearch(district) : ''),
-    !dong ? contextSection('상권 특성에 맞춘 설치 상담', district.context, district.nearby) : '',
     marketingSection(),
+    !dong && (district.dongs || []).length ? districtSearch(district) : '',
+    contextSection('상권 특성에 맞춘 설치 상담', dong ? dong.context || dong.lead : district.context, dong ? dong.nearby : district.nearby, page),
     productSection(selectedProducts(seed)),
     guideSection(district.tags),
     faqSection(page.faq),
