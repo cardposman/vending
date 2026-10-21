@@ -135,6 +135,9 @@ function head(site, page) {
 <meta property="og:image" content="${escapeHtml(page.ogImage)}"/>
 <meta property="og:image:alt" content="TS밴딩시스템 무인자판기 상담 이미지"/>
 <meta property="og:site_name" content="${escapeHtml(site.name)}"/>
+<link rel="shortcut icon" href="${escapeHtml(absoluteUrl(site, '/favicon.ico'))}" type="image/x-icon"/>
+<link rel="icon" href="${escapeHtml(absoluteUrl(site, '/assets/images/favicon-32.png'))}" type="image/png" sizes="32x32"/>
+<link rel="apple-touch-icon" href="${escapeHtml(absoluteUrl(site, '/assets/images/apple-touch-icon.png'))}" sizes="180x180"/>
 <link rel="stylesheet" href="/assets/css/vending.css?v=20261016b"/>
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>`;

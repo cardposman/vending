@@ -87,6 +87,14 @@ HTML, CSS, JS, 이미지 링크는 모두 `/` 기준 경로를 사용합니다.
 data/generated-urls.txt
 ```
 
+단계별 URL 목록은 `node scripts/export-region-urls.js`로 생성합니다.
+
+- `data/generated-urls-sigungu.txt`: 시/구/군 269개, 공식 행정코드 순서로 상위 시 다음에 하위 구 배치
+- `data/generated-urls-dong.txt`: 하위 읍/면/동 5,067개, 위 시/구/군 순서로 묶고 각 지역의 기존 하위 지역 순서 유지
+- 한 줄에 `https://tsvend.com/region/.../` 형태의 접속 URL 하나씩 기록하며, 도메인은 `data/regions.json`의 `site.origin` 사용
+- 홈·지역 카테고리·창업솔루션 페이지는 두 분류에서 제외
+- 지역 페이지를 재생성한 뒤 실행하면 목록에 있는 URL과 실제 HTML 파일의 존재 여부를 확인하고 갱신
+
 현재 하위 지역 상세 생성 범위:
 
 - 서울 25개 구 전체
@@ -377,6 +385,17 @@ PC에서는 화면 중앙에 배치하고, 모바일에서는 화면 너비에 �
 vending-test-image-report.txt
 vending-test-hero-thumb-report.txt
 ```
+
+## 파비콘
+
+- 디자인: 남색 바탕의 흰색 자판기, 청록색 상품 진열창과 결제부, 하단 배출구 (텍스트 없음)
+- 원본: `assets/images/favicon.svg`
+- 기본 파일: `/favicon.ico` (16, 32, 48, 64, 128, 256px 포함)
+- PNG 아이콘: `assets/images/favicon-32.png` (32px)
+- Apple 터치 아이콘: `assets/images/apple-touch-icon.png` (180px)
+- 홈, 창업솔루션, 지역 페이지에 동일한 아이콘을 연결
+- 아이콘 연결은 공개 도메인이 포함된 절대 URL을 사용하며 지역 페이지 생성기에도 반영
+- 기본 `/favicon.ico`는 실제 ICO 파일로 제공하고 HTML 페이지로 대체하지 않음
 
 ## 상담 링크
 
