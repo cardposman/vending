@@ -37,3 +37,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Load support only on the public site; keep the unfinished solution page empty.
+(() => {
+  if (location.origin !== 'https://tsvend.com' || /^\/startup-solution(?:\/|$)/.test(location.pathname)) return;
+
+  const start = () => {
+    if (document.getElementById('unified-support-loader') || document.querySelector('unified-support-chat')) return;
+    const script = document.createElement('script');
+    script.id = 'unified-support-loader';
+    script.src = 'https://lxrjy-92bbd.web.app/widget.js';
+    script.dataset.config = 'https://lxrjy-92bbd.web.app/config.json';
+    script.dataset.siteId = 'tsvend';
+    script.async = true;
+    script.addEventListener('load', () => {
+      const widget = document.querySelector('unified-support-chat');
+      if (!widget) return;
+      let frame;
+      const place = () => {
+        const footer = document.querySelector('.fixed-cta');
+        const rect = footer?.getBoundingClientRect();
+        const overlap = rect && rect.height > 0 && rect.width > 0 && rect.top < innerHeight && rect.bottom > 0
+          ? Math.max(0, innerHeight - Math.max(0, rect.top)) : 0;
+        widget.style.setProperty('--support-bottom', (overlap + 16) + 'px');
+
+        const width = document.documentElement.clientWidth;
+        const inset = width <= 480 ? 12 : 20;
+        const contentRight = Math.min(width, document.body.getBoundingClientRect().right);
+        widget.style.setProperty('--support-right', (Math.max(0, width - contentRight) + inset) + 'px');
+      };
+      const schedule = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(place); };
+      const footer = document.querySelector('.fixed-cta');
+      if (footer && 'ResizeObserver' in window) new ResizeObserver(schedule).observe(footer);
+      addEventListener('resize', schedule, { passive: true });
+      addEventListener('scroll', schedule, { passive: true });
+      window.visualViewport?.addEventListener('resize', schedule, { passive: true });
+      window.visualViewport?.addEventListener('scroll', schedule, { passive: true });
+      place();
+    }, { once: true });
+    document.body.append(script);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();

@@ -226,7 +226,7 @@ function footer() {
 <button class="primary" type="button" onclick="callNow()">전화 상담</button>
 <button class="secondary" type="button" onclick="openNaverForm()">상담예약</button>
 </div></div></div>
-<script src="/assets/js/vending.js?v=20261016b"></script>`;
+<script src="/assets/js/vending.js?v=20261116a"></script>`;
 }
 
 function contextSection(title, context, nearby, page) {
